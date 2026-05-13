@@ -1,0 +1,8 @@
+# Adventure Game Studio .gitignore
+Compiled/
+_Debug/
+_Release/
+*.obj
+acsprset.spr
+*.bak
+*.tmp
