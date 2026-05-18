@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>0</AudioIndexer>
+      <AudioIndexer>3</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -37,10 +37,10 @@
       <EnforceNewStrings>True</EnforceNewStrings>
       <EnforceObjectBasedScript>True</EnforceObjectBasedScript>
       <GUIAlphaStyle>MultiplyTranslucenceSrcBlend</GUIAlphaStyle>
-      <GUIDAsString>{1a0f2e0a-9874-4605-a183-31fd73ae5b78}</GUIDAsString>
+      <GUIDAsString>{1352ba8e-0af9-4fc2-9aff-172e951b9ff6}</GUIDAsString>
       <GameFPS>40</GameFPS>
-      <GameFileName>sid</GameFileName>
-      <GameName xml:space="preserve">Space In Disguise</GameName>
+      <GameFileName xml:space="preserve">TEST -SID</GameFileName>
+      <GameName xml:space="preserve">TEST -SID</GameName>
       <GameTextEncoding>utf-8</GameTextEncoding>
       <Genre>Adventure</Genre>
       <GlobalSpeechAnimationDelay>5</GlobalSpeechAnimationDelay>
@@ -63,7 +63,7 @@
       <RoomTransition>FadeOutAndIn</RoomTransition>
       <RunGameLoopsWhileDialogOptionsDisplayed>True</RunGameLoopsWhileDialogOptionsDisplayed>
       <SaveGameFileExtension />
-      <SaveGameFolderName xml:space="preserve">Space In Disguise</SaveGameFolderName>
+      <SaveGameFolderName xml:space="preserve">TEST -SID</SaveGameFolderName>
       <SaveScreenshots>False</SaveScreenshots>
       <ScaleCharacterSpriteOffsets>True</ScaleCharacterSpriteOffsets>
       <ScaleMovementSpeedWithMaskResolution>False</ScaleMovementSpeedWithMaskResolution>
@@ -80,7 +80,7 @@
       <ThoughtGUI>0</ThoughtGUI>
       <TurnBeforeFacing>False</TurnBeforeFacing>
       <TurnBeforeWalking>True</TurnBeforeWalking>
-      <UniqueID>2012424890</UniqueID>
+      <UniqueID>13558218</UniqueID>
       <UseGlobalSpeechAnimationDelay>False</UseGlobalSpeechAnimationDelay>
       <UseLowResCoordinatesInScript>False</UseLowResCoordinatesInScript>
       <UseOldCustomDialogOptionsAPI>False</UseOldCustomDialogOptionsAPI>
@@ -109,7 +109,7 @@
       <SoundCacheSize>32</SoundCacheSize>
       <SpriteCacheSize>128</SpriteCacheSize>
       <TextureCacheSize>128</TextureCacheSize>
-      <TitleText xml:space="preserve">Space In Disguise Setup</TitleText>
+      <TitleText xml:space="preserve">TEST -SID Setup</TitleText>
       <TouchToMouseEmulation>OneFinger</TouchToMouseEmulation>
       <TouchToMouseMotionMode>Direct</TouchToMouseMotionMode>
       <Translation />
@@ -657,6 +657,10 @@
           <UnloadedRoom>
             <Description IsNull="True" />
             <Number>1</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>2</Number>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -1954,6 +1958,28 @@
               </GUIButton>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>38912</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <BorderColor>38912</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>200</Height>
+              <ID>9</ID>
+              <Left>0</Left>
+              <Name>gAllarme</Name>
+              <OnClick>gGui1_OnClick</OnClick>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Top>0</Top>
+              <Transparency>50</Transparency>
+              <Visible>False</Visible>
+              <Width>320</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -2185,16 +2211,16 @@
             <MovementSpeed>4</MovementSpeed>
             <MovementSpeedX>3</MovementSpeedX>
             <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>1</NormalView>
+            <NormalView>2</NormalView>
             <Properties />
-            <RealName>Roger</RealName>
-            <ScriptName>cRoger</ScriptName>
+            <RealName xml:space="preserve">Harrison Torrices</RealName>
+            <ScriptName>cHT</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>122</StartX>
-            <StartY>142</StartY>
+            <StartX>0</StartX>
+            <StartY>0</StartY>
             <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
@@ -2443,60 +2469,60 @@
       <PaletteEntry Index="39" Type="Gamewide" Red="252" Green="0" Blue="84" />
       <PaletteEntry Index="40" Type="Gamewide" Red="252" Green="0" Blue="0" />
       <PaletteEntry Index="41" Type="Gamewide" Red="252" Green="68" Blue="0" />
-      <PaletteEntry Index="42" Type="Background" Red="128" Green="120" Blue="120" />
-      <PaletteEntry Index="43" Type="Background" Red="136" Green="116" Blue="112" />
-      <PaletteEntry Index="44" Type="Background" Red="132" Green="8" Blue="4" />
-      <PaletteEntry Index="45" Type="Background" Red="20" Green="4" Blue="4" />
-      <PaletteEntry Index="46" Type="Background" Red="196" Green="20" Blue="4" />
-      <PaletteEntry Index="47" Type="Background" Red="148" Green="136" Blue="132" />
-      <PaletteEntry Index="48" Type="Background" Red="68" Green="12" Blue="4" />
-      <PaletteEntry Index="49" Type="Background" Red="148" Green="124" Blue="120" />
-      <PaletteEntry Index="50" Type="Background" Red="176" Green="168" Blue="168" />
-      <PaletteEntry Index="51" Type="Background" Red="164" Green="128" Blue="124" />
-      <PaletteEntry Index="52" Type="Background" Red="88" Green="84" Blue="84" />
-      <PaletteEntry Index="53" Type="Background" Red="128" Green="116" Blue="112" />
-      <PaletteEntry Index="54" Type="Background" Red="148" Green="120" Blue="112" />
-      <PaletteEntry Index="55" Type="Background" Red="192" Green="160" Blue="148" />
-      <PaletteEntry Index="56" Type="Background" Red="152" Green="128" Blue="116" />
-      <PaletteEntry Index="57" Type="Background" Red="172" Green="152" Blue="140" />
-      <PaletteEntry Index="58" Type="Background" Red="104" Green="44" Blue="12" />
-      <PaletteEntry Index="59" Type="Background" Red="160" Green="144" Blue="132" />
-      <PaletteEntry Index="60" Type="Background" Red="156" Green="76" Blue="24" />
-      <PaletteEntry Index="61" Type="Background" Red="176" Green="128" Blue="92" />
-      <PaletteEntry Index="62" Type="Background" Red="200" Green="108" Blue="32" />
-      <PaletteEntry Index="63" Type="Background" Red="204" Green="192" Blue="176" />
-      <PaletteEntry Index="64" Type="Background" Red="176" Green="168" Blue="148" />
-      <PaletteEntry Index="65" Type="Background" Red="188" Green="180" Blue="164" />
-      <PaletteEntry Index="66" Type="Background" Red="136" Green="132" Blue="120" />
-      <PaletteEntry Index="67" Type="Background" Red="232" Green="228" Blue="196" />
-      <PaletteEntry Index="68" Type="Background" Red="212" Green="208" Blue="200" />
-      <PaletteEntry Index="69" Type="Background" Red="116" Green="112" Blue="92" />
-      <PaletteEntry Index="70" Type="Background" Red="232" Green="232" Blue="232" />
-      <PaletteEntry Index="71" Type="Background" Red="188" Green="188" Blue="44" />
-      <PaletteEntry Index="72" Type="Background" Red="216" Green="212" Blue="16" />
-      <PaletteEntry Index="73" Type="Background" Red="144" Green="144" Blue="92" />
-      <PaletteEntry Index="74" Type="Background" Red="168" Green="168" Blue="68" />
-      <PaletteEntry Index="75" Type="Background" Red="124" Green="128" Blue="104" />
-      <PaletteEntry Index="76" Type="Background" Red="196" Green="200" Blue="192" />
-      <PaletteEntry Index="77" Type="Background" Red="0" Green="228" Blue="204" />
-      <PaletteEntry Index="78" Type="Background" Red="40" Green="200" Blue="188" />
-      <PaletteEntry Index="79" Type="Background" Red="80" Green="172" Blue="168" />
-      <PaletteEntry Index="80" Type="Background" Red="4" Green="184" Blue="176" />
-      <PaletteEntry Index="81" Type="Background" Red="16" Green="144" Blue="156" />
-      <PaletteEntry Index="82" Type="Background" Red="176" Green="188" Blue="192" />
-      <PaletteEntry Index="83" Type="Background" Red="188" Green="212" Blue="216" />
-      <PaletteEntry Index="84" Type="Background" Red="152" Green="180" Blue="192" />
-      <PaletteEntry Index="85" Type="Background" Red="56" Green="152" Blue="212" />
-      <PaletteEntry Index="86" Type="Background" Red="112" Green="176" Blue="216" />
-      <PaletteEntry Index="87" Type="Background" Red="0" Green="120" Blue="200" />
-      <PaletteEntry Index="88" Type="Background" Red="96" Green="104" Blue="112" />
-      <PaletteEntry Index="89" Type="Background" Red="112" Green="120" Blue="128" />
-      <PaletteEntry Index="90" Type="Background" Red="180" Green="200" Blue="216" />
-      <PaletteEntry Index="91" Type="Background" Red="128" Green="164" Blue="192" />
-      <PaletteEntry Index="92" Type="Background" Red="140" Green="164" Blue="180" />
-      <PaletteEntry Index="93" Type="Background" Red="108" Green="148" Blue="192" />
-      <PaletteEntry Index="94" Type="Background" Red="88" Green="140" Blue="192" />
-      <PaletteEntry Index="95" Type="Background" Red="116" Green="144" Blue="172" />
+      <PaletteEntry Index="42" Type="Gamewide" Red="128" Green="120" Blue="120" />
+      <PaletteEntry Index="43" Type="Gamewide" Red="136" Green="116" Blue="112" />
+      <PaletteEntry Index="44" Type="Gamewide" Red="132" Green="8" Blue="4" />
+      <PaletteEntry Index="45" Type="Gamewide" Red="20" Green="4" Blue="4" />
+      <PaletteEntry Index="46" Type="Gamewide" Red="196" Green="20" Blue="4" />
+      <PaletteEntry Index="47" Type="Gamewide" Red="148" Green="136" Blue="132" />
+      <PaletteEntry Index="48" Type="Gamewide" Red="68" Green="12" Blue="4" />
+      <PaletteEntry Index="49" Type="Gamewide" Red="148" Green="124" Blue="120" />
+      <PaletteEntry Index="50" Type="Gamewide" Red="176" Green="168" Blue="168" />
+      <PaletteEntry Index="51" Type="Gamewide" Red="164" Green="128" Blue="124" />
+      <PaletteEntry Index="52" Type="Gamewide" Red="88" Green="84" Blue="84" />
+      <PaletteEntry Index="53" Type="Gamewide" Red="128" Green="116" Blue="112" />
+      <PaletteEntry Index="54" Type="Gamewide" Red="148" Green="120" Blue="112" />
+      <PaletteEntry Index="55" Type="Gamewide" Red="192" Green="160" Blue="148" />
+      <PaletteEntry Index="56" Type="Gamewide" Red="152" Green="128" Blue="116" />
+      <PaletteEntry Index="57" Type="Gamewide" Red="172" Green="152" Blue="140" />
+      <PaletteEntry Index="58" Type="Gamewide" Red="104" Green="44" Blue="12" />
+      <PaletteEntry Index="59" Type="Gamewide" Red="160" Green="144" Blue="132" />
+      <PaletteEntry Index="60" Type="Gamewide" Red="156" Green="76" Blue="24" />
+      <PaletteEntry Index="61" Type="Gamewide" Red="176" Green="128" Blue="92" />
+      <PaletteEntry Index="62" Type="Gamewide" Red="200" Green="108" Blue="32" />
+      <PaletteEntry Index="63" Type="Gamewide" Red="204" Green="192" Blue="176" />
+      <PaletteEntry Index="64" Type="Gamewide" Red="176" Green="168" Blue="148" />
+      <PaletteEntry Index="65" Type="Gamewide" Red="188" Green="180" Blue="164" />
+      <PaletteEntry Index="66" Type="Gamewide" Red="136" Green="132" Blue="120" />
+      <PaletteEntry Index="67" Type="Gamewide" Red="232" Green="228" Blue="196" />
+      <PaletteEntry Index="68" Type="Gamewide" Red="212" Green="208" Blue="200" />
+      <PaletteEntry Index="69" Type="Gamewide" Red="116" Green="112" Blue="92" />
+      <PaletteEntry Index="70" Type="Gamewide" Red="232" Green="232" Blue="232" />
+      <PaletteEntry Index="71" Type="Gamewide" Red="188" Green="188" Blue="44" />
+      <PaletteEntry Index="72" Type="Gamewide" Red="216" Green="212" Blue="16" />
+      <PaletteEntry Index="73" Type="Gamewide" Red="144" Green="144" Blue="92" />
+      <PaletteEntry Index="74" Type="Gamewide" Red="168" Green="168" Blue="68" />
+      <PaletteEntry Index="75" Type="Gamewide" Red="124" Green="128" Blue="104" />
+      <PaletteEntry Index="76" Type="Gamewide" Red="196" Green="200" Blue="192" />
+      <PaletteEntry Index="77" Type="Gamewide" Red="0" Green="228" Blue="204" />
+      <PaletteEntry Index="78" Type="Gamewide" Red="40" Green="200" Blue="188" />
+      <PaletteEntry Index="79" Type="Gamewide" Red="80" Green="172" Blue="168" />
+      <PaletteEntry Index="80" Type="Gamewide" Red="4" Green="184" Blue="176" />
+      <PaletteEntry Index="81" Type="Gamewide" Red="16" Green="144" Blue="156" />
+      <PaletteEntry Index="82" Type="Gamewide" Red="176" Green="188" Blue="192" />
+      <PaletteEntry Index="83" Type="Gamewide" Red="188" Green="212" Blue="216" />
+      <PaletteEntry Index="84" Type="Gamewide" Red="152" Green="180" Blue="192" />
+      <PaletteEntry Index="85" Type="Gamewide" Red="56" Green="152" Blue="212" />
+      <PaletteEntry Index="86" Type="Gamewide" Red="112" Green="176" Blue="216" />
+      <PaletteEntry Index="87" Type="Gamewide" Red="0" Green="120" Blue="200" />
+      <PaletteEntry Index="88" Type="Gamewide" Red="96" Green="104" Blue="112" />
+      <PaletteEntry Index="89" Type="Gamewide" Red="112" Green="120" Blue="128" />
+      <PaletteEntry Index="90" Type="Gamewide" Red="180" Green="200" Blue="216" />
+      <PaletteEntry Index="91" Type="Gamewide" Red="128" Green="164" Blue="192" />
+      <PaletteEntry Index="92" Type="Gamewide" Red="140" Green="164" Blue="180" />
+      <PaletteEntry Index="93" Type="Gamewide" Red="108" Green="148" Blue="192" />
+      <PaletteEntry Index="94" Type="Gamewide" Red="88" Green="140" Blue="192" />
+      <PaletteEntry Index="95" Type="Gamewide" Red="116" Green="144" Blue="172" />
       <PaletteEntry Index="96" Type="Background" Red="68" Green="128" Blue="192" />
       <PaletteEntry Index="97" Type="Background" Red="120" Green="132" Blue="144" />
       <PaletteEntry Index="98" Type="Background" Red="32" Green="76" Blue="140" />
@@ -4631,6 +4657,587 @@
               </Sprite>
             </Sprites>
           </SpriteFolder>
+          <SpriteFolder Name="Harrison">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="17" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="18" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="19" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="20" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="21" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>256</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="22" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>320</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="23" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>384</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="24" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>448</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="25" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>512</OffsetX>
+                  <OffsetY>512</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="26" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="27" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="28" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="29" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="30" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>256</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="31" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>320</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="32" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>384</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="33" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>448</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="34" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>512</OffsetX>
+                  <OffsetY>576</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="35" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="36" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="37" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="38" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="39" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>256</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="40" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>320</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="41" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>384</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="42" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>448</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="43" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>512</OffsetX>
+                  <OffsetY>640</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="44" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="45" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="46" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="47" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="48" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>256</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="49" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>320</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="50" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>384</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="51" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>448</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="52" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\old64\Desktop\harrison_spritesheet.png</FileName>
+                  <OffsetX>512</OffsetX>
+                  <OffsetY>704</OffsetY>
+                  <ImportHeight>64</ImportHeight>
+                  <ImportWidth>64</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>True</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <TransparentColorIndex>0</TransparentColorIndex>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
         </SubFolders>
         <Sprites>
           <Sprite Slot="0" Width="10" Height="6" ColorDepth="32" Resolution="Real" AlphaChannel="True">
@@ -4657,8 +5264,8 @@
         <SubFolders />
         <Views>
           <View>
-            <ID>1</ID>
-            <Name>VIEW1</Name>
+            <ID>2</ID>
+            <Name>Harrison_Torrices</Name>
             <Loops>
               <Loop>
                 <ID>0</ID>
@@ -4668,49 +5275,63 @@
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>0</ID>
-                    <Image>2000</Image>
+                    <Image>35</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>1</ID>
-                    <Image>2001</Image>
+                    <Image>36</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>2</ID>
-                    <Image>2002</Image>
+                    <Image>37</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>3</ID>
-                    <Image>2003</Image>
+                    <Image>38</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>4</ID>
-                    <Image>2004</Image>
+                    <Image>39</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>5</ID>
-                    <Image>2005</Image>
+                    <Image>40</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>6</ID>
-                    <Image>2006</Image>
+                    <Image>41</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>7</ID>
+                    <Image>42</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>8</ID>
+                    <Image>43</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                 </Frames>
@@ -4723,49 +5344,63 @@
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>0</ID>
-                    <Image>2010</Image>
+                    <Image>26</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>1</ID>
-                    <Image>2011</Image>
+                    <Image>27</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>2</ID>
-                    <Image>2012</Image>
+                    <Image>28</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>3</ID>
-                    <Image>2013</Image>
+                    <Image>29</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>4</ID>
-                    <Image>2014</Image>
+                    <Image>30</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>5</ID>
-                    <Image>2015</Image>
+                    <Image>31</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>6</ID>
-                    <Image>2016</Image>
+                    <Image>32</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>7</ID>
+                    <Image>33</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>8</ID>
+                    <Image>34</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                 </Frames>
@@ -4778,49 +5413,63 @@
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>0</ID>
-                    <Image>2020</Image>
+                    <Image>44</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>1</ID>
-                    <Image>2021</Image>
+                    <Image>45</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>2</ID>
-                    <Image>2022</Image>
+                    <Image>46</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>3</ID>
-                    <Image>2023</Image>
+                    <Image>47</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>4</ID>
-                    <Image>2024</Image>
+                    <Image>48</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>5</ID>
-                    <Image>2025</Image>
+                    <Image>49</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>6</ID>
-                    <Image>2026</Image>
+                    <Image>50</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>7</ID>
+                    <Image>51</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>8</ID>
+                    <Image>52</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                 </Frames>
@@ -4833,49 +5482,63 @@
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>0</ID>
-                    <Image>2030</Image>
+                    <Image>17</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>1</ID>
-                    <Image>2031</Image>
+                    <Image>18</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>2</ID>
-                    <Image>2032</Image>
+                    <Image>19</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>3</ID>
-                    <Image>2033</Image>
+                    <Image>20</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>4</ID>
-                    <Image>2034</Image>
+                    <Image>21</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>5</ID>
-                    <Image>2035</Image>
+                    <Image>22</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <Delay>0</Delay>
                     <Flipped>False</Flipped>
                     <ID>6</ID>
-                    <Image>2036</Image>
+                    <Image>23</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>7</ID>
+                    <Image>24</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>8</ID>
+                    <Image>25</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                 </Frames>
@@ -4886,7 +5549,7 @@
       </ViewFolder>
     </Views>
     <DeletedViews>
-      <ViewID>2</ViewID>
+      <ViewID>1</ViewID>
     </DeletedViews>
     <Scripts>
       <ScriptFolder Name="Main">
@@ -4959,7 +5622,34 @@
           </AudioClipFolder>
           <AudioClipFolder Name="Sounds">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>0</ID>
+                <Index>1</Index>
+                <ScriptName>aAllarme</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\Alarm.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-05-18 15:55:58Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>1</ID>
+                <Index>3</Index>
+                <ScriptName>aSchianto</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\668549_mikhalin1992_planecrash (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-05-18 16:18:36Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultBundlingType>InGameEXE</DefaultBundlingType>
               <DefaultPriority>Inherit</DefaultPriority>
