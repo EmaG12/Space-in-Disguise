@@ -3,6 +3,5 @@ Compiled/
 _Debug/
 _Release/
 *.obj
-acsprset.spr
 *.bak
 *.tmp
