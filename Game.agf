@@ -87,7 +87,7 @@
       <UseOldKeyboardHandling>False</UseOldKeyboardHandling>
       <UseOldVoiceClipNaming>False</UseOldVoiceClipNaming>
       <Version>1.0.0.0</Version>
-      <WalkInLookMode>False</WalkInLookMode>
+      <WalkInLookMode>True</WalkInLookMode>
       <WhenInterfaceDisabled>GreyOut</WhenInterfaceDisabled>
     </Settings>
     <RuntimeSetup>
