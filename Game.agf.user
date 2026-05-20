@@ -21,7 +21,7 @@
   </Component>
   <WorkspaceState>
     <LastBuildConfiguration>Debug</LastBuildConfiguration>
-    <LastBuildGameFileName xml:space="preserve">DataFile=TEST -SID,Windows=TEST -SID,_Debug=TEST -SID,</LastBuildGameFileName>
+    <LastBuildGameFileName xml:space="preserve">DataFile=TEST -SID,Windows=TEST -SID,_Debug=Space In Disguise,</LastBuildGameFileName>
     <RequiresRebuild>False</RequiresRebuild>
   </WorkspaceState>
 </AGSEditorUserData>
