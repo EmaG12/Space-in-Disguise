@@ -5,7 +5,7 @@
     <SelectedItem BreadcrumbPath="Room/Hotspots" />
     <Layers>
       <Edges>
-        <Visible>True</Visible>
+        <Visible>False</Visible>
         <Locked>False</Locked>
         <Items>
           <Item ID="Bottom">
