@@ -704,13 +704,13 @@
                 <Font>0</Font>
                 <Height>20</Height>
                 <ID>0</ID>
-                <Left>0</Left>
+                <Left>-10</Left>
                 <Locked>False</Locked>
                 <Name>lblAction</Name>
                 <Text xml:space="preserve">label text</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>65535</TextColor>
-                <Top>0</Top>
+                <Top>3</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>320</Width>
@@ -1976,7 +1976,7 @@
               <ID>9</ID>
               <Left>0</Left>
               <Name>gAllarme</Name>
-              <OnClick>gGui1_OnClick</OnClick>
+              <OnClick />
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <ScriptModule>GlobalScript.asc</ScriptModule>
@@ -2022,6 +2022,25 @@
             <ID>2</ID>
             <Image>2042</Image>
             <Name>iKey</Name>
+            <PlayerStartsWithItem>True</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>0</CursorImage>
+            <Description xml:space="preserve">Allarme navicella</Description>
+            <HotspotX>6</HotspotX>
+            <HotspotY>3</HotspotY>
+            <ID>3</ID>
+            <Image>99</Image>
+            <Name>iAllarme</Name>
             <PlayerStartsWithItem>True</PlayerStartsWithItem>
             <Properties />
             <Interactions>
@@ -2227,9 +2246,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>412</StartX>
-            <StartY>160</StartY>
-            <StartingRoom>3</StartingRoom>
+            <StartX>0</StartX>
+            <StartY>0</StartY>
+            <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -2308,17 +2327,17 @@
 @S  // Dialog startup entry point
 return
 @1
-cHT: HEIL HITLER!
-cEsploratore: NICHT! W IL DUCE
+
+cEsploratore: Mi chiamo Zorg, sono un esploratore della vicina cittadina di Horizon.
 return 
 
 @2
-cHT: Sei ebreo?
-cEsploratore: Grazie a dio no.
+
+cEsploratore: Una piccola ricerca su questi cristalli che vedi in questa caverna.
 return
 
 @3
-cEsploratore: Ciao ricchio.
+cEsploratore: Ci vediamo, alieno...
   cEsploratore.FaceDirection(eDirectionRight);
 stop
 
@@ -2326,21 +2345,21 @@ stop
             <DialogOptions>
               <DialogOption>
                 <ID>1</ID>
-                <Say>False</Say>
+                <Say>True</Say>
                 <Show>True</Show>
-                <Text xml:space="preserve">Un amico fascista?</Text>
+                <Text xml:space="preserve">Chi sei?</Text>
               </DialogOption>
               <DialogOption>
                 <ID>2</ID>
-                <Say>False</Say>
+                <Say>True</Say>
                 <Show>True</Show>
-                <Text xml:space="preserve">Un amico ebreo?</Text>
+                <Text xml:space="preserve">Perche ti trovi qui?</Text>
               </DialogOption>
               <DialogOption>
                 <ID>3</ID>
                 <Say>True</Say>
                 <Show>True</Show>
-                <Text xml:space="preserve">Ciao finocchio</Text>
+                <Text>Ciao</Text>
               </DialogOption>
             </DialogOptions>
           </Dialog>
@@ -6125,6 +6144,22 @@ stop
               <OffsetY>0</OffsetY>
               <ImportHeight>16</ImportHeight>
               <ImportWidth>16</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="99" Width="20" Height="21" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Sprites/altoparlante.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>21</ImportHeight>
+              <ImportWidth>20</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>True</RemapToGamePalette>
