@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>5</AudioIndexer>
+      <AudioIndexer>8</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -1988,6 +1988,365 @@
             </NormalGUI>
             <Controls />
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>16</BackgroundColor>
+              <BackgroundImage>103</BackgroundImage>
+              <BorderColor>0</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>140</Height>
+              <ID>10</ID>
+              <Left>40</Left>
+              <Name>gMinigioco</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Top>25</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>240</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>False</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>21</Height>
+                <ID>0</ID>
+                <Image>101</Image>
+                <Left>76</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Spia1</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick />
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>22</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>20</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>0</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>False</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>21</Height>
+                <ID>1</ID>
+                <Image>101</Image>
+                <Left>94</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Spia2</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick />
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>22</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>19</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>1</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>False</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>21</Height>
+                <ID>2</ID>
+                <Image>101</Image>
+                <Left>112</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Spia3</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick />
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>22</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>20</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>2</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>False</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>20</Height>
+                <ID>3</ID>
+                <Image>101</Image>
+                <Left>131</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Spia4</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick />
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>22</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>19</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>3</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>False</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>22</Height>
+                <ID>4</ID>
+                <Image>101</Image>
+                <Left>149</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Spia5</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick />
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>22</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>18</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>4</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>10</Height>
+                <ID>5</ID>
+                <Image>0</Image>
+                <Left>81</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Tasto1</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Tasto1_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>45</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>11</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>5</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>10</Height>
+                <ID>6</ID>
+                <Image>0</Image>
+                <Left>99</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Tasto2</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Tasto2_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>45</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>12</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>6</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>10</Height>
+                <ID>7</ID>
+                <Image>0</Image>
+                <Left>118</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Tasto3</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Tasto3_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>45</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>11</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>7</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>10</Height>
+                <ID>8</ID>
+                <Image>0</Image>
+                <Left>136</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Tasto4</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Tasto4_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>45</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>11</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>8</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>10</Height>
+                <ID>9</ID>
+                <Image>0</Image>
+                <Left>154</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Tasto5</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Tasto5_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>45</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>11</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>9</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>16</Height>
+                <ID>10</ID>
+                <Image>0</Image>
+                <Left>4</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Button1</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Button1_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text>X</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>5</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>16</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>10</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>37</Height>
+                <ID>11</ID>
+                <Image>0</Image>
+                <Left>104</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>btnAltoparlante</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnAltoparlante_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>75</Top>
+                <Translated>True</Translated>
+                <Visible>False</Visible>
+                <Width>39</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>11</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -2041,7 +2400,7 @@
             <ID>3</ID>
             <Image>99</Image>
             <Name>iAllarme</Name>
-            <PlayerStartsWithItem>True</PlayerStartsWithItem>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
@@ -2288,7 +2647,7 @@
             <ScriptName>cEsploratore</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
+            <SpeechColor>21471</SpeechColor>
             <SpeechView>0</SpeechView>
             <StartX>412</StartX>
             <StartY>160</StartY>
@@ -2841,7 +3200,15 @@ stop
       <PaletteEntry Index="255" Type="Background" Red="120" Green="120" Blue="120" />
     </Palette>
     <GlobalVariables>
-      <Variables />
+      <Variables>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>QuestEsploratore</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+      </Variables>
     </GlobalVariables>
     <Sprites>
       <SpriteFolder Name="Main">
@@ -6169,6 +6536,86 @@ stop
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
+          <Sprite Slot="101" Width="20" Height="21" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>C:\Users\Gabriele\Desktop\Spia.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>21</ImportHeight>
+              <ImportWidth>20</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="102" Width="20" Height="21" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>C:\Users\Gabriele\Desktop\SpiaAccesa.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>21</ImportHeight>
+              <ImportWidth>20</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="103" Width="240" Height="140" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+            <Source>
+              <FileName>C:\Users\Gabriele\Downloads\ChatGPT Image 26 mag 2026, 13_55_26(1).png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>140</ImportHeight>
+              <ImportWidth>240</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="100" Width="240" Height="140" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+            <Source>
+              <FileName>C:\Users\Gabriele\Downloads\ChatGPT Image 26 mag 2026, 19_43_27(1).png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>140</ImportHeight>
+              <ImportWidth>240</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="104" Width="240" Height="140" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+            <Source>
+              <FileName>C:\Users\Gabriele\Downloads\ChatGPT Image 26 mag 2026, 19_38_50(2).png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>140</ImportHeight>
+              <ImportWidth>240</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
         </Sprites>
       </SpriteFolder>
     </Sprites>
@@ -6953,6 +7400,32 @@ stop
                 <SourceFileName>C:\Users\old64\Downloads\447562__phantomcreations__synthetic-inside-gradually-collapsing-cave-with-water-droplets-stones-of-various-sizes-falling.mp3</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-05-22 18:10:09Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>4</ID>
+                <Index>7</Index>
+                <ScriptName>aClick</ScriptName>
+                <SourceFileName>C:\Users\Gabriele\Downloads\click.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-05-26 14:30:27Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>5</ID>
+                <Index>8</Index>
+                <ScriptName>aUnlock</ScriptName>
+                <SourceFileName>C:\Users\Gabriele\Downloads\unlock.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-05-26 15:33:17Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
