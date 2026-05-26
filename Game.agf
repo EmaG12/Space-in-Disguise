@@ -670,6 +670,10 @@
             <Description IsNull="True" />
             <Number>3</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>4</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2246,9 +2250,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>0</StartX>
-            <StartY>0</StartY>
-            <StartingRoom>1</StartingRoom>
+            <StartX>1228</StartX>
+            <StartY>232</StartY>
+            <StartingRoom>4</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
