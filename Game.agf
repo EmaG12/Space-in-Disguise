@@ -2697,7 +2697,7 @@ cEsploratore: Le mie orecchie non sono più quelle di una volta.
 
   }
  else
-cEsploratore: Che minchia vuoi?
+cEsploratore: Cosa ti serve?
 return
 @1 
 cEsploratore: Sono Viktor, uno dei pochi scienziati rimasti su questo pianeta.
@@ -2784,6 +2784,26 @@ stop
                 <Text xml:space="preserve">Ci vediamo strambo.</Text>
               </DialogOption>
             </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>1</ID>
+            <Name>dPostEnigma</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  
+ if(Game.DoOnceOnly("Dialogo iniziale"))
+  {
+    
+cEsploratore: Wow, ha funzionato!!!
+cHT: EHM....non hai sentito lo schianto fuori?
+cEsploratore: Le mie orecchie non sono più quelle di una volta.
+
+  }
+ else
+cEsploratore: Cosa ti serve?
+return
+]]></Script>
+            <DialogOptions />
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -3283,6 +3303,13 @@ stop
           <ArrayType>None</ArrayType>
           <DefaultValue>false</DefaultValue>
           <Name>QuestEsploratore</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>QuestEsploratoreCompletata</Name>
           <Type>bool</Type>
         </GlobalVariable>
       </Variables>
