@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>11</AudioIndexer>
+      <AudioIndexer>12</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -2653,8 +2653,8 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>21471</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>412</StartX>
-            <StartY>160</StartY>
+            <StartX>380</StartX>
+            <StartY>148</StartY>
             <StartingRoom>3</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
@@ -7513,22 +7513,22 @@ stop
                 <ID>6</ID>
                 <Index>10</Index>
                 <ScriptName>aArmonia</ScriptName>
-                <SourceFileName>C:\Users\old64\Downloads\239040__the_very_real_horst__solfeggio-wind-chimes-mi-528-hz-single-cut.wav</SourceFileName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\239040__the_very_real_horst__solfeggio-wind-chimes-mi-528-hz-single-cut (mp3cut.net)(1).wav</SourceFileName>
                 <Type>3</Type>
-                <FileLastModifiedDate>2026-05-27 10:55:46Z</FileLastModifiedDate>
+                <FileLastModifiedDate>2026-05-27 13:54:36Z</FileLastModifiedDate>
               </AudioClip>
               <AudioClip>
                 <BundlingType>InGameEXE</BundlingType>
                 <DefaultPriority>Inherit</DefaultPriority>
                 <DefaultRepeat>Inherit</DefaultRepeat>
                 <DefaultVolume>-1</DefaultVolume>
-                <FileType>WAV</FileType>
+                <FileType>MP3</FileType>
                 <ID>7</ID>
-                <Index>11</Index>
+                <Index>12</Index>
                 <ScriptName>aCristalloSpezzato</ScriptName>
-                <SourceFileName>C:\Users\old64\Downloads\542565__matthewholdensound__owi_crystalclass-shatter.wav</SourceFileName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\542565_matthewholdensound_owi_crystalclass-shatter (mp3cut.net).mp3</SourceFileName>
                 <Type>3</Type>
-                <FileLastModifiedDate>2026-05-27 10:57:22Z</FileLastModifiedDate>
+                <FileLastModifiedDate>2026-05-27 13:58:39Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
