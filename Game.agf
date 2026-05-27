@@ -674,6 +674,10 @@
             <Description IsNull="True" />
             <Number>4</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>5</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2359,33 +2363,14 @@
         <SubFolders />
         <InventoryItems>
           <InventoryItem>
-            <CursorImage>2041</CursorImage>
-            <Description>Cup</Description>
-            <HotspotX>1</HotspotX>
-            <HotspotY>1</HotspotY>
+            <CursorImage>0</CursorImage>
+            <Description xml:space="preserve">Allarme navicella</Description>
+            <HotspotX>6</HotspotX>
+            <HotspotY>3</HotspotY>
             <ID>1</ID>
-            <Image>2041</Image>
-            <Name>iCup</Name>
-            <PlayerStartsWithItem>True</PlayerStartsWithItem>
-            <Properties />
-            <Interactions>
-              <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
-              <Event Index="1">iCup_Interact</Event>
-              <Event Index="2" />
-              <Event Index="3" />
-              <Event Index="4" />
-            </Interactions>
-          </InventoryItem>
-          <InventoryItem>
-            <CursorImage>2042</CursorImage>
-            <Description>Key</Description>
-            <HotspotX>1</HotspotX>
-            <HotspotY>1</HotspotY>
-            <ID>2</ID>
-            <Image>2042</Image>
-            <Name>iKey</Name>
-            <PlayerStartsWithItem>True</PlayerStartsWithItem>
+            <Image>99</Image>
+            <Name>iAllarme</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
@@ -2398,12 +2383,12 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description xml:space="preserve">Allarme navicella</Description>
-            <HotspotX>6</HotspotX>
-            <HotspotY>3</HotspotY>
-            <ID>3</ID>
-            <Image>99</Image>
-            <Name>iAllarme</Name>
+            <Description xml:space="preserve">La Geo-Mappa data dall'esploratore</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>2</ID>
+            <Image>106</Image>
+            <Name>iGeoMappa</Name>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
             <Interactions>
@@ -2791,17 +2776,21 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  
- if(Game.DoOnceOnly("Dialogo iniziale"))
+ if(Game.DoOnceOnly("Dialogo Post-Enigma"))
   {
     
-cEsploratore: Wow, ha funzionato!!!
-cHT: EHM....non hai sentito lo schianto fuori?
-cEsploratore: Le mie orecchie non sono più quelle di una volta.
-
+cEsploratore: Incredibile...bastava "solo" un alieno sciagurato a far risuonare questi cristalli.
+cHT: Parla per te...primitivo.
+cEsploratore: Grazie all'energia sprigionata dal cristallo sono riuscito a ricaricare questa Geo-Mappa.
+cHT: Wow, assurdo, spaziale, incredibile.
+cEsploratore: Ignorero' l'insulto e le tue battute sarcastiche, tieni, questa mappa ti servirà per raggiungere un villaggio qui vicino.
+cEsploratore: Ho un amico che forse può darti una mano con la tua navicella.
+cHT: Allora non mi hai fatto perdere tempo.
+cEsploratore: Continua per la caverna e segui l'indicatore sulla mappa, è collegata ai tuoi bio-marcatori quindi verrà mostrata sempre la tua attuale posizione.
+cHT: Se e' una trappola, sappi che tornero'.
   }
  else
-cEsploratore: Cosa ti serve?
-return
+cEsploratore: Ti sei perso straniero?
 ]]></Script>
             <DialogOptions />
           </Dialog>
@@ -6727,6 +6716,22 @@ return
               <OffsetY>0</OffsetY>
               <ImportHeight>60</ImportHeight>
               <ImportWidth>70</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="106" Width="21" Height="21" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Sprites/GeoMappa.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>21</ImportHeight>
+              <ImportWidth>21</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>True</RemapToGamePalette>
