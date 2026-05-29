@@ -1,2 +1,1 @@
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
+Game : (room:2) WARNING: event script function 'room_RepExec' not found (Room 2)
