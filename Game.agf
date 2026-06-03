@@ -2598,9 +2598,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>68</StartX>
-            <StartY>142</StartY>
-            <StartingRoom>6</StartingRoom>
+            <StartX>0</StartX>
+            <StartY>0</StartY>
+            <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -2848,7 +2848,7 @@ cEsploratore: Ti sei perso straniero?
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
- if(Game.DoOnceOnly("Dialogo iniziale"))
+ if(Game.DoOnceOnly("Primo dialogo BOB"))
   { 
 cMeccanico: E chi saresti tu?
 cHT: Un tuo amico mi ha detto che potresti darmi una mano con la mia navicella
@@ -2912,6 +2912,7 @@ cHT: Provero' a prendere la tua forma...menomale che la mia muta riesce a simula
   
   player.ChangeView(ESPLO);  
   Wait(20);
+  TrasformatoInEsploratore = true;
   FadeIn(64);
   // Fine blocco codice
 
@@ -2929,13 +2930,13 @@ stop
               <DialogOption>
                 <ID>2</ID>
                 <Say>True</Say>
-                <Show>True</Show>
+                <Show>False</Show>
                 <Text>Soluzioni?</Text>
               </DialogOption>
               <DialogOption>
                 <ID>3</ID>
                 <Say>False</Say>
-                <Show>True</Show>
+                <Show>False</Show>
                 <Text>TRASFORMAZIONE</Text>
               </DialogOption>
             </DialogOptions>
@@ -3465,6 +3466,13 @@ stop
           <ArrayType>None</ArrayType>
           <DefaultValue>false</DefaultValue>
           <Name>TrasformazioneInEsploratore</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>TrasformatoInEsploratore</Name>
           <Type>bool</Type>
         </GlobalVariable>
       </Variables>

@@ -1,1 +1,1 @@
-Game : (room:5) [room5.asc:16] !NewRoom: Cannot run this command, since there was a NewRoom command already queued to run in "room5.asc", line 9
+Game : (room:3) Dialog: all options have been turned off, stopping dialog.
