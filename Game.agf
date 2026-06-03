@@ -2855,6 +2855,7 @@ cHT: Un tuo amico mi ha detto che potresti darmi una mano con la mia navicella
 cMeccanico: Non ti conosco, non voglio avere nulla a che fare con xenospecie.
 cHT: Dammi una mano ora o te ne pentirai.
 cMeccanico: La vedi questa chiave? Prova ad indovinare dove posso mettertela.
+ TrasformazioneInEsploratore = true;
   }
  else
 cMeccanico: Ancora tu? Sparisci
@@ -2874,6 +2875,70 @@ stop
 return
 ]]></Script>
             <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>4</ID>
+            <Name>dTrasformazioneEsploratore</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cEsploratore: Spero Bob ti abbia aiutato.
+cHT: Assolutamente no, non aiuta le "xenospecie". Avresti potuto avvisarmi.
+cEsploratore: Mh...immaginavo, lui è l'unico qui che potrebbe darti una mano ed ora la situazione si complica.
+return
+
+@1
+cEsploratore: Non posso permettermi di lasciare la grotta, ho scoperto qualcosa di impressionante qui e non lascerò che degli sciacalli rubino ciò che si trova qui.
+option-on 2
+option-off 1
+return
+@2
+cEsploratore: Nessun oggetto farà cambiare idea a quel vecchio rospo, rubare è fuori questione, verresti beccato e non faresti una bella fine.
+cEsploratore: Forse potresti travestirti come un locale...no non funzionerebbe, quel rospone conosce tutti, verresti beccato e di nuovo, non faresti una bella fine.
+cHT: Credo proprio che dovrò usare l'opzione drastica allora.
+cEsploratore: Cosa vuoi fare? Uccidere tutti quanti? Pazzo, non te lo permettero'.
+cHT: Calmo lunatico, sono un alieno, ricordi? La mia specie ha un potere speciale vietato dall'Alto Consiglio del nostro pianeta.
+cEsploratore: E quale sarebbe?
+cHT: Siamo dei mutaforma, possiamo prendere la forma di qualsiasi essere vivente SENZIENTE.
+cEsploratore: Puoi trasformarti in me?
+cHT: Potrei certo ma ho bisogno che le tue vibrazioni cerebrali siano in sincronia con le mie...in altre parole, il tuo cervello gelatinoso deve acconsentire inconsciamente alla mia richiesta.
+cEsploratore: Fantastico!!! Proviamo ora, ti prego, voglio vedere come appaio agli occhi della mia ex moglie.
+option-on 3
+option-off 2
+return
+@3
+cHT: Provero' a prendere la tua forma...menomale che la mia muta riesce a simulare anche i tuoi stracci...
+ FadeOut(64); 
+  
+  player.ChangeView(ESPLO);  
+  Wait(20);
+  FadeIn(64);
+  // Fine blocco codice
+
+cEsploratore: Ma... ma quello sono io! Posso capire perche la mia ex moglie mi ha lasciato con un irlandese.
+stop
+
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Vieni con me</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text>Soluzioni?</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Say>False</Say>
+                <Show>True</Show>
+                <Text>TRASFORMAZIONE</Text>
+              </DialogOption>
+            </DialogOptions>
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -3393,6 +3458,13 @@ return
           <ArrayType>None</ArrayType>
           <DefaultValue>false</DefaultValue>
           <Name>QuestEsploratoreCompletata</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>TrasformazioneInEsploratore</Name>
           <Type>bool</Type>
         </GlobalVariable>
       </Variables>
