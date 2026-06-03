@@ -2844,34 +2844,36 @@ cEsploratore: Ti sei perso straniero?
           </Dialog>
           <Dialog>
             <ID>2</ID>
-            <Name>dBob</Name>
+            <Name>dBobPrimoIncontro</Name>
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cMeccanico: E chi cazzo sei tu?
-return
-@1
-cMeccanico: Non aiuto gli immigrati, vai via pia!
-return
-@2
-cMeccanico: A te negro
+ if(Game.DoOnceOnly("Dialogo iniziale"))
+  { 
+cMeccanico: E chi saresti tu?
+cHT: Un tuo amico mi ha detto che potresti darmi una mano con la mia navicella
+cMeccanico: Non ti conosco, non voglio avere nulla a che fare con xenospecie.
+cHT: Dammi una mano ora o te ne pentirai.
+cMeccanico: La vedi questa chiave? Prova ad indovinare dove posso mettertela.
+  }
+ else
+cMeccanico: Ancora tu? Sparisci
 stop
 
+
+
 ]]></Script>
-            <DialogOptions>
-              <DialogOption>
-                <ID>1</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">Mi serve una mano</Text>
-              </DialogOption>
-              <DialogOption>
-                <ID>2</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text>Vafangul</Text>
-              </DialogOption>
-            </DialogOptions>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>3</ID>
+            <Name>dBobHTEsploratore</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+]]></Script>
+            <DialogOptions />
           </Dialog>
         </Dialogs>
       </DialogFolder>
