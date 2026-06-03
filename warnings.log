@@ -1,2 +1,1 @@
-Game : (room:2) WARNING: event script function 'room_RepExec' not found (Room 2)
-Game : (room:3) WARNING: event script function 'room_Load' not found (Room 3)
+Game : (room:5) [room5.asc:16] !NewRoom: Cannot run this command, since there was a NewRoom command already queued to run in "room5.asc", line 9
