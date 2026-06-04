@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>12</AudioIndexer>
+      <AudioIndexer>13</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -2872,6 +2872,7 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
+cMeccanico: muori
 return
 ]]></Script>
             <DialogOptions />
@@ -2885,7 +2886,10 @@ return
 cEsploratore: Spero Bob ti abbia aiutato.
 cHT: Assolutamente no, non aiuta le "xenospecie". Avresti potuto avvisarmi.
 cEsploratore: Mh...immaginavo, lui è l'unico qui che potrebbe darti una mano ed ora la situazione si complica.
-return
+ 
+ 
+
+  
 
 @1
 cEsploratore: Non posso permettermi di lasciare la grotta, ho scoperto qualcosa di impressionante qui e non lascerò che degli sciacalli rubino ciò che si trova qui.
@@ -2919,6 +2923,9 @@ cHT: Provero' a prendere la tua forma...menomale che la mia muta riesce a simula
 cEsploratore: Ma... ma quello sono io! Posso capire perche la mia ex moglie mi ha lasciato con un irlandese.
 stop
 
+@4
+stop
+
 ]]></Script>
             <DialogOptions>
               <DialogOption>
@@ -2939,7 +2946,23 @@ stop
                 <Show>False</Show>
                 <Text>TRASFORMAZIONE</Text>
               </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Ci vediamo strambo</Text>
+              </DialogOption>
             </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>5</ID>
+            <Name>dHTEsploratore</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+]]></Script>
+            <DialogOptions />
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -7746,7 +7769,21 @@ stop
         <SubFolders>
           <AudioClipFolder Name="Music">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>5</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>8</ID>
+                <Index>13</Index>
+                <ScriptName>aVillaggioDesertico</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\1-shimmering-mirage-blue-lava_Prwkpq9r.mp3</SourceFileName>
+                <Type>2</Type>
+                <FileLastModifiedDate>2026-06-04 11:14:50Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
               <DefaultPriority>Inherit</DefaultPriority>
