@@ -2738,7 +2738,7 @@
             <TurnWhenFacing>True</TurnWhenFacing>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <UseRoomAreaLighting>False</UseRoomAreaLighting>
-            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
               <Event Index="0" />
