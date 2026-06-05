@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>13</AudioIndexer>
+      <AudioIndexer>27</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -2617,9 +2617,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>897</StartX>
-            <StartY>287</StartY>
-            <StartingRoom>4</StartingRoom>
+            <StartX>0</StartX>
+            <StartY>0</StartY>
+            <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -2935,10 +2935,84 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cMeccanico: muori
+ if(Game.DoOnceOnly("Dialogo HT con BOB"))
+ {
+cMeccanico: Viktor!!! Cosa ti porta qui, vecchio straccione?
+ }
+ else
+ {
+cMeccanico: Viktor...
+cHT: Rospone...
+ }
 return
+
+@1
+cMeccanico: Sempre sul pezzo, mio caro amico straccione.
+cMeccanico: Quando ti decidi a cambiare casa?
+cHT: Ehm...ah si la grotta intendi...non appena trovero' degli abiti nuovi.
+option-on 2
+option-off 1
+return
+
+@2
+cHT: Per caso e' passato uno strano alieno parlante con le corna?
+cMeccanico: Bhe si, ne ho proprio uno qui difronte me, era tua moglie che ti ha lasciato per un Mollusco vero? AHAHAHAH...ehm scusa, colpo di tosse.
+cHT: AHAHAHA...AH...intendevo un alieno non di queste parti.
+cMeccanico: Si, ha chiesto di te ma non mi fido, e' andato via ora, amico tuo o no non intendo aiutare stranieri, vedi in che condizioni versiamo noi.
+cMeccanico: Non me lo aspettavo da te, pensavo tenessi a cuore noi, e ora vai in giro ad aiutare xenospecie?!
+option-on 3
+option-off 2
+return
+
+@3
+cHT: In realta' questo alieno si è schiantato e vorrei effettuare un "Reverse engineering" della sua navicella, forse posso scoprire tecnologie che potrebbero aiutarci.
+cHT: L'ho mandato qui per levarmelo di torno, in modo tale da poterla studiare meglio da vicino.
+cHT: Li ho indicato anche una strada di ritorno sbagliata, sai quella piena di burroni, sperando ci sia cascato dentro.
+cMeccanico: AHAHAHA, ora si che ci capiamo.
+cMeccanico: Comunque, bando alle ciance e ciancio alle bande...cosa ti serve?
+option-on 4
+option-off 3
+return
+
+@4
+cHT: Vorrei una mano, sicuramente avrai qualcosa per far ripartire quel rottame.
+cMeccanico: Potrei...se mi prometti di portare qualche pezzo di tecnologia aliena...tutti abbiamo bisogno di vivere.
+cHT: Certo rospone, ma adesso muoviti e dammi qualcosa.
+cMeccanico: Un attimo che cerco una chiave...
+ aC.Play(eAudioPriorityHigh);
+ Wait(240);
+cMeccanico: Ecco qua, con questa puoi accedere alla miniera giu' nel villaggio, potresti trovare qualcosa di utile li...
+cHT: Grazie rospone
+option-off 4
+stop
+
 ]]></Script>
-            <DialogOptions />
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Ciao rospone</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>False</Say>
+                <Show>False</Show>
+                <Text xml:space="preserve">Alieno rompiscatole</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Say>False</Say>
+                <Show>False</Show>
+                <Text xml:space="preserve">Navicella schiantata</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Say>False</Say>
+                <Show>False</Show>
+                <Text>Aiuto</Text>
+              </DialogOption>
+            </DialogOptions>
           </Dialog>
           <Dialog>
             <ID>4</ID>
@@ -8056,6 +8130,19 @@ return
                 <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\542565_matthewholdensound_owi_crystalclass-shatter (mp3cut.net).mp3</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-05-27 13:58:39Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>9</ID>
+                <Index>27</Index>
+                <ScriptName>aC</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\Cianfrusaglie.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-05 10:22:31Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
