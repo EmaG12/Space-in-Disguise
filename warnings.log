@@ -1,10 +1,1 @@
-<<<<<<< HEAD
 Game : (room:3) Dialog: all options have been turned off, stopping dialog.
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
-Game : (room:6) Dialog: all options have been turned off, stopping dialog.
-=======
-Game : (room:4) WARNING: event script function 'room_FirstLoad' not found (Room 4)
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
->>>>>>> 256ec1bc2a36e586e935267d1e8a4eafd77b57b4
