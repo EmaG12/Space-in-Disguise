@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>13</AudioIndexer>
+      <AudioIndexer>27</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -2617,9 +2617,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>897</StartX>
-            <StartY>287</StartY>
-            <StartingRoom>4</StartingRoom>
+            <StartX>0</StartX>
+            <StartY>0</StartY>
+            <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -2877,7 +2877,7 @@
     
 cEsploratore: EHM....chi sei? Non ricordo di aver mai visto la tua specie.
 cHT: EHM....non hai sentito lo schianto fuori?
-cEsploratore: Le mie orecchie non sono più quelle di una volta.
+cEsploratore: Le mie orecchie non sono piu' quelle di una volta.
 
   }
  else
@@ -2885,13 +2885,14 @@ cEsploratore: Cosa ti serve?
 return
 @1 
 cEsploratore: Sono Viktor, uno dei pochi scienziati rimasti su questo pianeta.
-cEsploratore: Piuttosto, chi cazzo sei tu?
+cEsploratore: Piuttosto, chi sei tu?
 option-on 2
 option-off 1
 return 
 @2
-cHT: Non sono di questo pianeta, mentre ero in orbita la mia navicella ha avuto un guasto e mi sono schiantato fuori da casa tua.
-cEsploratore: Non e' casa mia, si vede che sei strambo.
+cHT: Non sono di questo pianeta, mentre ero in orbita la mia navicella ha avuto un guasto e mi sono schiantato qui fuori.
+cHT: Questa e' casa tua?
+cEsploratore: Non e' casa mia, mi sembri un tipo strambo.
 cEsploratore: Mi spiace per te, la dea bendata ti ha voltato le spalle portandoti qui.
 option-on 3
 option-off 2
@@ -2899,7 +2900,7 @@ return
 
 @3
 cHT: Come mai? Tanto non avevo intenzione di restare qui.
-cHT: Sto cercando un modo per andare via il prima possibile, hai qualche idea su come far ripartire la mia navicella?
+cHT: Sto cercando un modo per andare via il prima possibile, potresti aiutarmi a far ripartire la mia navicella?
 cEsploratore: Non so come funziona sul tuo pianeta straniero, ma qui una mano lava l'altra, aiutami e forse ti aiutero'.
 option-on 5
 option-off 3
@@ -2907,25 +2908,27 @@ return
 @4
 cEsploratore: Come ti stavo dicendo, questi cristalli contengono un tipo di energia che potrebbe aiutare il pianeta.
 cEsploratore: Tuttavia, l'unico modo per estrarre questa energia e' far risuonare il nucleo del cristallo ad una frequenza molto potente.
-cEsploratore: Ti trovi qui con la tua navicella, corretto? Suppongo tu abbia qualcosa di utile a bordo.
+cEsploratore: La tua navicella e' qui fuori, corretto? Suppongo tu abbia qualcosa di utile a bordo.
 cHT: Daro' un'occhiata alle cose ancora intatte.
+ 
  QuestEsploratore = true;
 return
 
 @5
-cEsploratore: Sto studiando questi cristalli per...aspetta, come fai a parlare la mia lingua?
+cEsploratore: Vedi, sto studiando questi cristalli per...aspetta, come fai a parlare la mia lingua?
 cHT: You know, i'm something of a scientist myself...
 cEsploratore:...cosa?
 cHT: Scusa, il mio Synth-PRO-67 ha sbagliato linguaggio, le tue frequenze armoniche non sono facili da decifrare.
 cEsploratore: E cosa sarebbe questo 67?
 cHT: E' una mia invenzione, come stavo cercando di dirti, sono anche io una sorta di scienziato.
-cEsploratore: Se lo sei per davvero, allora puoi darmi una mano con questi cristalli...come se questa giornata non fosse gia' folle.
+cEsploratore: Se lo sei davvero, allora puoi darmi una mano con questi cristalli...
+cEsploratore: Questa giornata e' davvero folle.
 option-on 4
 option-off 5
 return
 
-@6
-cEsploratore: Ci vediamo lunatico.
+@6 
+cEsploratore: Ci vediamo.
  cEsploratore.FaceDirection(eDirectionRight);
 stop
 
@@ -2941,7 +2944,7 @@ stop
                 <ID>2</ID>
                 <Say>False</Say>
                 <Show>False</Show>
-                <Text xml:space="preserve">Spiega allo strambo</Text>
+                <Text xml:space="preserve">Spiega allo scienziato </Text>
               </DialogOption>
               <DialogOption>
                 <ID>3</ID>
@@ -2959,13 +2962,13 @@ stop
                 <ID>5</ID>
                 <Say>True</Say>
                 <Show>False</Show>
-                <Text xml:space="preserve">Cosa ci fai in questo buco?</Text>
+                <Text xml:space="preserve">Come posso aiutarti?</Text>
               </DialogOption>
               <DialogOption>
                 <ID>6</ID>
                 <Say>True</Say>
                 <Show>True</Show>
-                <Text xml:space="preserve">Ci vediamo strambo.</Text>
+                <Text xml:space="preserve">Ci vediamo.</Text>
               </DialogOption>
             </DialogOptions>
           </Dialog>
@@ -2978,15 +2981,16 @@ stop
  if(Game.DoOnceOnly("Dialogo Post-Enigma"))
   {
     
-cEsploratore: Incredibile...bastava "solo" un alieno sciagurato a far risuonare questi cristalli.
+cEsploratore: Incredibile...bastava un alieno sciagurato a far risuonare questi cristalli.
 cHT: Parla per te...primitivo.
 cEsploratore: Grazie all'energia sprigionata dal cristallo sono riuscito a ricaricare questa Geo-Mappa.
 cHT: Wow, assurdo, spaziale, incredibile.
-cEsploratore: Ignorero' l'insulto e le tue battute sarcastiche, tieni, questa mappa ti servirà per raggiungere un villaggio qui vicino.
+cEsploratore: Ignorero' l'insulto e le tue battute sarcastiche e voglio ricambiare il favore adesso.
 cEsploratore: Ho un amico che forse può darti una mano con la tua navicella.
+cEsploratore: Tieni, questa mappa ti servira' per raggiungere un villaggio qui vicino, dove troverai questa persona.
 cHT: Allora non mi hai fatto perdere tempo.
-cEsploratore: Continua per la caverna e segui l'indicatore sulla mappa, è collegata ai tuoi bio-marcatori quindi verrà mostrata sempre la tua attuale posizione.
-cHT: Se e' una trappola, sappi che tornero'.
+cEsploratore: Continua per la caverna e segui l'indicatore sulla mappa, e' collegata ai tuoi bio-marcatori quindi verra' mostrata sempre la tua attuale posizione.
+cHT: Se e' una trappola, sappi che ti cerchero'.
   }
  else
 cEsploratore: Ti sei perso straniero?
@@ -3002,7 +3006,8 @@ cEsploratore: Ti sei perso straniero?
  if(Game.DoOnceOnly("Primo dialogo BOB"))
   { 
 cMeccanico: E chi saresti tu?
-cHT: Un tuo amico mi ha detto che potresti darmi una mano con la mia navicella
+cHT: Un tuo amico mi ha detto che potresti darmi una mano.
+cHT: Ho un guasto alla mia navicella e mi servirebbe ripararla.
 cMeccanico: Non ti conosco, non voglio avere nulla a che fare con xenospecie.
 cHT: Dammi una mano ora o te ne pentirai.
 cMeccanico: La vedi questa chiave? Prova ad indovinare dove posso mettertela.
@@ -3023,10 +3028,84 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cMeccanico: muori
+ if(Game.DoOnceOnly("Dialogo HT con BOB"))
+ {
+cMeccanico: Viktor!!! Cosa ti porta qui, vecchio straccione?
+ }
+ else
+ {
+cMeccanico: Viktor...
+cHT: Rospone...
+ }
 return
+
+@1
+cMeccanico: Sempre sul pezzo, mio caro amico straccione.
+cMeccanico: Quando ti decidi a cambiare casa?
+cHT: Ehm...ah si la grotta intendi...non appena trovero' degli abiti nuovi.
+option-on 2
+option-off 1
+return
+
+@2
+cHT: Per caso e' passato uno strano alieno parlante con le corna?
+cMeccanico: Bhe si, ne ho proprio uno qui difronte me, era tua moglie che ti ha lasciato per un Mollusco vero? AHAHAHAH...ehm scusa, colpo di tosse.
+cHT: AHAHAHA...AH...intendevo un alieno non di queste parti.
+cMeccanico: Si, ha chiesto di te ma non mi fido, e' andato via ora, amico tuo o no non intendo aiutare stranieri, vedi in che condizioni versiamo noi.
+cMeccanico: Non me lo aspettavo da te, pensavo tenessi a cuore noi, e ora vai in giro ad aiutare xenospecie?!
+option-on 3
+option-off 2
+return
+
+@3
+cHT: In realta' questo alieno si è schiantato e vorrei effettuare un "Reverse engineering" della sua navicella, forse posso scoprire tecnologie che potrebbero aiutarci.
+cHT: L'ho mandato qui per levarmelo di torno, in modo tale da poterla studiare meglio da vicino.
+cHT: Li ho indicato anche una strada di ritorno sbagliata, sai quella piena di burroni, sperando ci sia cascato dentro.
+cMeccanico: AHAHAHA, ora si che ci capiamo.
+cMeccanico: Comunque, bando alle ciance e ciancio alle bande...cosa ti serve?
+option-on 4
+option-off 3
+return
+
+@4
+cHT: Vorrei una mano, sicuramente avrai qualcosa per far ripartire quel rottame.
+cMeccanico: Potrei...se mi prometti di portare qualche pezzo di tecnologia aliena...tutti abbiamo bisogno di vivere.
+cHT: Certo rospone, ma adesso muoviti e dammi qualcosa.
+cMeccanico: Un attimo che cerco una chiave...
+ aC.Play(eAudioPriorityHigh);
+ Wait(240);
+cMeccanico: Ecco qua, con questa puoi accedere alla miniera giu' nel villaggio, potresti trovare qualcosa di utile li...
+cHT: Grazie rospone
+option-off 4
+stop
+
 ]]></Script>
-            <DialogOptions />
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Ciao rospone</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>False</Say>
+                <Show>False</Show>
+                <Text xml:space="preserve">Alieno rompiscatole</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Say>False</Say>
+                <Show>False</Show>
+                <Text xml:space="preserve">Navicella schiantata</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Say>False</Say>
+                <Show>False</Show>
+                <Text>Aiuto</Text>
+              </DialogOption>
+            </DialogOptions>
           </Dialog>
           <Dialog>
             <ID>4</ID>
@@ -8251,7 +8330,7 @@ return
                 <ScriptName>aVillaggioDesertico</ScriptName>
                 <SourceFileName>C:\Users\old64\Downloads\1-shimmering-mirage-blue-lava_Prwkpq9r.mp3</SourceFileName>
                 <Type>2</Type>
-                <FileLastModifiedDate>2026-06-04 11:14:50Z</FileLastModifiedDate>
+                <FileLastModifiedDate>2026-06-05 09:17:46Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
@@ -8368,6 +8447,19 @@ return
                 <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\542565_matthewholdensound_owi_crystalclass-shatter (mp3cut.net).mp3</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-05-27 13:58:39Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>9</ID>
+                <Index>27</Index>
+                <ScriptName>aC</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\Cianfrusaglie.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-05 10:22:31Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
