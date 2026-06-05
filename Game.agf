@@ -2404,6 +2404,25 @@
               <Event Index="4" />
             </Interactions>
           </InventoryItem>
+          <InventoryItem>
+            <CursorImage>0</CursorImage>
+            <Description xml:space="preserve">Chiave per la miniera</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>3</ID>
+            <Image>2042</Image>
+            <Name>iChiave</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
         </InventoryItems>
       </InventoryItemFolder>
     </InventoryItems>
@@ -2725,7 +2744,7 @@
             <NormalView>5</NormalView>
             <Properties />
             <RealName xml:space="preserve">New character</RealName>
-            <ScriptName>cTipo</ScriptName>
+            <ScriptName>cMushy</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>32799</SpeechColor>
@@ -2929,7 +2948,7 @@ return
 @S  // Dialog startup entry point
 cEsploratore: Spero Bob ti abbia aiutato.
 cHT: Assolutamente no, non aiuta le "xenospecie". Avresti potuto avvisarmi.
-cEsploratore: Mh...immaginavo, lui è l'unico qui che potrebbe darti una mano ed ora la situazione si complica.
+cEsploratore: Mh...immaginavo, lui e' l'unico qui che potrebbe darti una mano ed ora la situazione si complica.
  
  
 
@@ -3003,7 +3022,8 @@ stop
             <Name>dHTEsploratore</Name>
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
-@S  // Dialog startup entry point
+@S 
+
 return
 ]]></Script>
             <DialogOptions />
