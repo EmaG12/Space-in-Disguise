@@ -682,6 +682,10 @@
             <Description IsNull="True" />
             <Number>6</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>7</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2762,7 +2766,7 @@
               <ScriptModule>GlobalScript.asc</ScriptModule>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cMushy_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2987,6 +2991,7 @@ cMeccanico: Un attimo che cerco una chiave...
  aC.Play(eAudioPriorityHigh);
  Wait(240);
 cMeccanico: Ecco qua, con questa puoi accedere alla miniera giu' nel villaggio, potresti trovare qualcosa di utile li...
+ player.AddInventory(iChiave);
 cHT: Grazie rospone
 option-off 4
 stop
@@ -3102,10 +3107,67 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S 
-
+cEsploratore: Ciao!!! Sono cosi strano quando parlo...?
 return
 ]]></Script>
             <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>6</ID>
+            <Name>dMushyHT</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cMushy: Ciaooo, come e e staaai i i i???
+cHT: Ciaaoooo, tutto bene!!!
+return
+
+@1
+cMushy: EEHH magari, fino a qualche tempo fa preparaaavo molte pooozioni con effetti moolto visibili.
+cHT: E cosa e' successo poi?
+cMushy: Quel vecchio rospone ha chiuso la miniera alle mie spalle, da li prendevo tutti i miei ingredienti. Non era molto fan delle mie creazioni.
+cHT: Capisco...non ti chiedi perche' sono diverso dalla maggior parte delle specie qua?
+cMushy: Non sto parlando con un sasso?
+option-off 1
+stop
+
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Funghi allucinogeni?</Text>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>7</ID>
+            <Name>dMushyHTEsploratore</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cMushy: Viktoooor, come staaaai???
+cHT: Tutto beneeee.
+return
+@1
+cMushy: Ti ho visto parlare con il roospooneee.
+cHT: Siuisi, devo accedere alla miniera, ho dimenticato una cosa.
+cMushy: So dove devi andare e non puoi.
+cMushy: C'e' una nube tossica piu avanti e l'unico modo per accedere e' tramite un mio preparato.
+cMushy: Ti ho visto da Bob ed ho anche origliaaaaatooooo, portami qualche funghetto e ti faccio la pozione.
+cHT: Credo di non avere altra scelta, ti portero' qualcosa.
+cMushy: Grazie Viktor, sei il migliore, non come quel mollusco che si e' preso tua moglie.
+return
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>False</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Funghi allucinogeni pt.2</Text>
+              </DialogOption>
+            </DialogOptions>
           </Dialog>
         </Dialogs>
       </DialogFolder>
