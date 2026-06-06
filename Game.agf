@@ -3082,47 +3082,51 @@ cMeccanico: Viktor!!! Cosa ti porta qui, vecchio straccione?
  }
  else
  {
-cMeccanico: Viktor...
-cHT: Rospone...
+cMeccanico: Vai alla miniera giu' del villaggio, non rimarrai deluso.
  }
 return
 
 @1
-cMeccanico: Sempre sul pezzo, mio caro amico straccione.
+cMeccanico: Sempre sul pezzo, vacchio amico mio.
 cMeccanico: Quando ti decidi a cambiare casa?
-cHT: Ehm...ah si la grotta intendi...non appena trovero' degli abiti nuovi.
+cHT: Ehm...ah si la grotta intendi...non appena trovero' un posto accogliente come quello.
+cMeccanico: Hahahaha riesci a chiamare quel luridume posto accogliente.
 option-on 2
 option-off 1
 return
 
 @2
+cHT: Volevo chiederti una cosa.
 cHT: Per caso e' passato uno strano alieno parlante con le corna?
-cMeccanico: Bhe si, ne ho proprio uno qui difronte me, era tua moglie che ti ha lasciato per un Mollusco vero? AHAHAHAH...ehm scusa, colpo di tosse.
-cHT: AHAHAHA...AH...intendevo un alieno non di queste parti.
-cMeccanico: Si, ha chiesto di te ma non mi fido, e' andato via ora, amico tuo o no non intendo aiutare stranieri, vedi in che condizioni versiamo noi.
-cMeccanico: Non me lo aspettavo da te, pensavo tenessi a cuore noi, e ora vai in giro ad aiutare xenospecie?!
+cMeccanico: Intendi la tua ex moglie che ti ha lasciato per un Mollusco vero? AHAHAHAH...ehm scusa, (colpo di tosse).
+cHT: AHAHA...AH...AH...intendevo un alieno non di queste parti.
+cMeccanico: Mh si e mi ha chiesto di te, pero' non mi fido.
+cMeccanico: E' andato via non molto tempo fa, amico tuo o no non intendo aiutare stranieri, vedi in che condizioni versiamo noi.
+cHT: Non e' un mio amico, pero' mi e' stato molto di aiuto, quindi vorrei ricambiargli il favore.
+cMeccanico: Non me lo aspettavo da te, pensavo tenessi a cuore noi e ora vai in giro ad aiutare xenospecie?!
 option-on 3
 option-off 2
 return
 
 @3
-cHT: In realta' questo alieno si è schiantato e vorrei effettuare un "Reverse engineering" della sua navicella, forse posso scoprire tecnologie che potrebbero aiutarci.
+cHT: Non sono cambiato, infatti lo faccio anche per noi. Questo alieno si è schiantato e vorrei effettuare un "Reverse engineering" della sua navicella, così facendo potrei scoprire tecnologie che potrebbero aiutarci.
 cHT: L'ho mandato qui per levarmelo di torno, in modo tale da poterla studiare meglio da vicino.
 cHT: Li ho indicato anche una strada di ritorno sbagliata, sai quella piena di burroni, sperando ci sia cascato dentro.
-cMeccanico: AHAHAHA, ora si che ci capiamo.
-cMeccanico: Comunque, bando alle ciance e ciancio alle bande...cosa ti serve?
+cMeccanico: AHAHAHA, ora si che ti riconosco vecchio mio.
+cMeccanico: Comunque, bando alle ciance... di cosa hai bisogno?
 option-on 4
 option-off 3
 return
 
 @4
-cHT: Vorrei una mano, sicuramente avrai qualcosa per far ripartire quel rottame.
-cMeccanico: Potrei...se mi prometti di portare qualche pezzo di tecnologia aliena...tutti abbiamo bisogno di vivere.
-cHT: Certo rospone, ma adesso muoviti e dammi qualcosa.
+cHT: Sicuramente avrai qualcosa per far ripartire quel rottame.
+cMeccanico: Potrei...ma ad una condizione.
+CMeccanico: Mi devi portare qualche pezzo di tecnologia aliena...riuscirei a ricavarne una fortuna.
+cHT: Accetto, ma adesso muoviti e dammi qualcosa.
 cMeccanico: Un attimo che cerco una chiave...
  aC.Play(eAudioPriorityHigh);
  Wait(240);
-cMeccanico: Ecco qua, con questa puoi accedere alla miniera giu' nel villaggio, potresti trovare qualcosa di utile li...
+cMeccanico: Ecco qua, con questa vai alla miniera giu' nel villaggio, potresti trovare qualcosa di utile li...
  player.AddInventory(iChiave);
 cHT: Grazie rospone
 option-off 4
@@ -3280,16 +3284,18 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cMushy: Viktoooor, come staaaai???
-cHT: Tutto beneeee.
+cMushy:Ehi Viktor, cosa ci fai da queste parti, non ti si vede mai???
+cHT: Sono solo di passaggio, ho una cosa importante da fare.
 return
 @1
-cMushy: Ti ho visto parlare con il roospooneee.
-cHT: Siuisi, devo accedere alla miniera, ho dimenticato una cosa.
+cMushy: Devo essere sincero, ti ho visto parlare col rospone.
+cMushy: Potrei anche aver origliato un po'.
 cMushy: So dove devi andare e non puoi.
-cMushy: C'e' una nube tossica piu avanti e l'unico modo per accedere e' tramite un mio preparato.
-cMushy: Ti ho visto da Bob ed ho anche origliaaaaatooooo, portami qualche funghetto e ti faccio la pozione.
-cHT: Credo di non avere altra scelta, ti portero' qualcosa.
+cMushy: C'e' una nube tossica piu avanti e l'unico modo per accedere e' tramite uno dei miei fantastici preparati.
+cHT: Allora dammene uno, aiuta un tuo vecchio amico.
+cMushy: Ahahah non correre Viktor, ogni cosa ha un suo prezzo.
+cMushy: Sono molto a corto di risorse, portami una scorta di funghetti e ti aiuterò.
+cHT:Non credo di avere altra scelta, ti portero' qualcosa.
 cMushy: Grazie Viktor, sei il migliore, non come quel mollusco che si e' preso tua moglie.
 return
 ]]></Script>
