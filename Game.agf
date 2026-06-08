@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>29</AudioIndexer>
+      <AudioIndexer>31</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -9895,6 +9895,19 @@ return
                 <SourceFileName>C:\Users\old64\Desktop\213605__dpoggioli__passage-way-ambience-can-be-looped.wav</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-06-08 11:07:13Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>12</ID>
+                <Index>31</Index>
+                <ScriptName>Unlock</ScriptName>
+                <SourceFileName>C:\Users\Gabriele\Downloads\114250__godofph__door-unlock.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-08 18:20:49Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
