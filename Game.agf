@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>28</AudioIndexer>
+      <AudioIndexer>29</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -2814,8 +2814,8 @@
             <MovementSpeedY>0</MovementSpeedY>
             <NormalView>6</NormalView>
             <Properties />
-            <RealName xml:space="preserve">New character</RealName>
-            <ScriptName>cChar1</ScriptName>
+            <RealName>Arlo</RealName>
+            <ScriptName>cPolish</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>512</SpeechColor>
@@ -2858,8 +2858,8 @@
             <MovementSpeedY>0</MovementSpeedY>
             <NormalView>7</NormalView>
             <Properties />
-            <RealName xml:space="preserve">New character</RealName>
-            <ScriptName>cChar2</ScriptName>
+            <RealName>Congiuntivite</RealName>
+            <ScriptName>cCacodemoneTarocco</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>32799</SpeechColor>
@@ -2877,7 +2877,7 @@
               <ScriptModule>GlobalScript.asc</ScriptModule>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cCacodemoneTarocco_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2902,8 +2902,8 @@
             <MovementSpeedY>0</MovementSpeedY>
             <NormalView>8</NormalView>
             <Properties />
-            <RealName xml:space="preserve">New character</RealName>
-            <ScriptName>cChar3</ScriptName>
+            <RealName xml:space="preserve">Becca la cavalla</RealName>
+            <ScriptName>cBecca</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>64536</SpeechColor>
@@ -3307,8 +3307,12 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
+ if(Game.DoOnceOnly("Mushy e il travestito")){
 cMushy:Ehi Viktor, cosa ci fai da queste parti, non ti si vede mai???
 cHT: Sono solo di passaggio, ho una cosa importante da fare.
+ }
+  else
+cMushy: Ciao Viiiktor :)
 return
 @1
 cMushy: Devo essere sincero, ti ho visto parlare col rospone.
@@ -3320,9 +3324,9 @@ cMushy: Ahahah non correre Viktor, ogni cosa ha un suo prezzo.
 cMushy: Sono molto a corto di risorse, portami una scorta di funghetti e ti aiuterò.
 cHT:Non credo di avere altra scelta, ti portero' qualcosa.
 cMushy: Grazie Viktor, sei il migliore, non come quel mollusco che si e' preso tua moglie.
+option-off 1
 stop
-@2
-return
+
 ]]></Script>
             <DialogOptions>
               <DialogOption>
@@ -3331,13 +3335,61 @@ return
                 <Show>True</Show>
                 <Text xml:space="preserve">Funghi allucinogeni pt.2</Text>
               </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>8</ID>
+            <Name>dCacodemoneTarocco</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+ 
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Cosa sei?</Text>
+              </DialogOption>
               <DialogOption>
                 <ID>2</ID>
-                <Say>False</Say>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Che lavoro svolgevi?</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text />
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Say>True</Say>
                 <Show>True</Show>
                 <Text />
               </DialogOption>
             </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>9</ID>
+            <Name>dArlo</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>10</ID>
+            <Name>dBecca</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+]]></Script>
+            <DialogOptions />
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -9830,6 +9882,19 @@ return
                 <SourceFileName xml:space="preserve">C:\Users\old64\Desktop\Ambient Wind (8).mp3</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2024-10-31 22:54:21Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>11</ID>
+                <Index>29</Index>
+                <ScriptName>aLaboratorio</ScriptName>
+                <SourceFileName>C:\Users\old64\Desktop\213605__dpoggioli__passage-way-ambience-can-be-looped.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-08 11:07:13Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
