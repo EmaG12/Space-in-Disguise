@@ -2644,9 +2644,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>282</StartX>
-            <StartY>172</StartY>
-            <StartingRoom>7</StartingRoom>
+            <StartX>878</StartX>
+            <StartY>278</StartY>
+            <StartingRoom>4</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -8280,6 +8280,22 @@ return
               <ImportHeight>66</ImportHeight>
               <ImportWidth>166</ImportWidth>
               <ImportAsTile>True</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="167" Width="33" Height="65" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>C:\Users\Gabriele\Downloads\Cancello.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>65</ImportHeight>
+              <ImportWidth>33</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>True</RemapToGamePalette>
               <RemapToRoomPalette>False</RemapToRoomPalette>
