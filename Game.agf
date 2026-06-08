@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>27</AudioIndexer>
+      <AudioIndexer>28</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -3320,6 +3320,8 @@ cMushy: Ahahah non correre Viktor, ogni cosa ha un suo prezzo.
 cMushy: Sono molto a corto di risorse, portami una scorta di funghetti e ti aiuterò.
 cHT:Non credo di avere altra scelta, ti portero' qualcosa.
 cMushy: Grazie Viktor, sei il migliore, non come quel mollusco che si e' preso tua moglie.
+stop
+@2
 return
 ]]></Script>
             <DialogOptions>
@@ -3328,6 +3330,12 @@ return
                 <Say>False</Say>
                 <Show>True</Show>
                 <Text xml:space="preserve">Funghi allucinogeni pt.2</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>False</Say>
+                <Show>True</Show>
+                <Text />
               </DialogOption>
             </DialogOptions>
           </Dialog>
@@ -9793,6 +9801,19 @@ return
                 <SourceFileName>C:\Users\old64\Downloads\Cianfrusaglie.mp3</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-06-05 10:22:31Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>35</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>10</ID>
+                <Index>28</Index>
+                <ScriptName>aMiniera</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Desktop\Ambient Wind (8).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2024-10-31 22:54:21Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
