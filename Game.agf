@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>31</AudioIndexer>
+      <AudioIndexer>35</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -2790,7 +2790,7 @@
               <Event Index="0" />
               <Event Index="1" />
               <Event Index="2">cMushy_Talk</Event>
-              <Event Index="3" />
+              <Event Index="3">cMushy_UseInv</Event>
               <Event Index="4" />
               <Event Index="5" />
               <Event Index="6" />
@@ -3391,6 +3391,33 @@ return
 ]]></Script>
             <DialogOptions />
           </Dialog>
+          <Dialog>
+            <ID>11</ID>
+            <Name>dMushyQuest</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cHT: Questo puo' andare bene?
+cMushy: E'peeerfeeetto, con queeesto saaro' appooosto per quaalche giooorno, grazie Viktooor.
+cHT: Non ti stai dimenticando nulla?
+cMushy: Nooo, coosa? Aaahh giuustoo ti serviiva il miio intruuglio per suuperare la nuube. Un aaattimo che te lo preeeparo.
+ FadeOut(5);
+ aPreparazione.Play();
+ Wait(180);
+ FadeIn(5);
+cMushy: Ecco faaatto, queeesto ti aiuutera' a supeeeraree la neeebbiaa toossicaaa in foondo alla miiniera. Puoi berlaa subitoo.
+cHT: Ok, *GULP* provo a berla.
+ aStappo.Play();
+ Wait(40);
+ aBere.Play();
+ Wait(100);
+cHT: Spero per te che funzioni, ma cosa c'è lì in fondo?
+cMushy: Viktooor ma cooome non ti riiicordi? C'e' uno deeei tuuoi veeecchi laaaboratorii.
+cHT: Ah certo, giusto. Per un attimo mi sono scordato, la tua roba sta facendo gia' effetto.
+stop
+]]></Script>
+            <DialogOptions />
+          </Dialog>
         </Dialogs>
       </DialogFolder>
     </Dialogs>
@@ -3923,6 +3950,13 @@ return
           <ArrayType>None</ArrayType>
           <DefaultValue>false</DefaultValue>
           <Name>TrasformatoInEsploratore</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>QuestMushyCompletata</Name>
           <Type>bool</Type>
         </GlobalVariable>
       </Variables>
@@ -9257,7 +9291,7 @@ return
           </View>
           <View>
             <ID>8</ID>
-            <Name>View8</Name>
+            <Name>EsploratriceWalk</Name>
             <Loops>
               <Loop>
                 <ID>0</ID>
@@ -9908,6 +9942,45 @@ return
                 <SourceFileName>C:\Users\Gabriele\Downloads\114250__godofph__door-unlock.wav</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-06-08 18:20:49Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>13</ID>
+                <Index>33</Index>
+                <ScriptName>aPreparazione</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\Gabriele\Downloads\BotW SFX - link cooking (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-09 18:39:47Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>14</ID>
+                <Index>34</Index>
+                <ScriptName>aStappo</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\Gabriele\Downloads\Bottle Cork - Sound Effect HD (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-09 19:28:52Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>15</ID>
+                <Index>35</Index>
+                <ScriptName>aBere</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\Gabriele\Downloads\Drinking Magic Potions Free Sound Effect (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-09 19:40:20Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
