@@ -3550,7 +3550,7 @@ return
             <DialogOptions />
           </Dialog>
           <Dialog>
-            <ID>11</ID>
+            <ID>14</ID>
             <Name>dMushyQuest</Name>
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
