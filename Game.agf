@@ -2833,7 +2833,7 @@
               <ScriptModule>GlobalScript.asc</ScriptModule>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cPolish_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2858,7 +2858,7 @@
             <MovementSpeedY>0</MovementSpeedY>
             <NormalView>7</NormalView>
             <Properties />
-            <RealName>Congiuntivite</RealName>
+            <RealName xml:space="preserve">Caco il decespugliatore</RealName>
             <ScriptName>cCacodemoneTarocco</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
@@ -2921,7 +2921,7 @@
               <ScriptModule>GlobalScript.asc</ScriptModule>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cBecca_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -3342,7 +3342,49 @@ stop
             <Name>dCacodemoneTarocco</Name>
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
- 
+@S  // Dialog startup entry point
+ if(Game.DoOnceOnly("Primo incontro con caco come HT"))
+ {
+cCacodemoneTarocco : Rasoi, rasoi, vendo rasoi alla meta' del prezzo, rasoi intimi per grandi e piccoli cespugli!!!
+cHT: Mi spiace, ho gia' un BallShave69420.
+ }
+ else
+ {
+cCacodemoneTarocco: Ti sei deciso a comprare un bel BushShaver?
+cHT: No.
+ }
+return
+
+@1
+cCacodemoneTarocco : Mi chiamo Caco, ero un intimiere. Tu chi sei?
+cHT: Ehm...sono un contadino.
+cCacodemoneTarocco: Per quanto io sappia non ci sono fattorie nelle vicinanze, bhe forse non sono aggiornato.
+option-off 1
+option-on 2
+return
+
+@2
+cCacodemoneTarocco : Si, hai capito proprio bene, zappaterra, immagino che voi delle steppe lontane abbiate un bel cespuglio.
+cHT: Cos'e' un intimiere?
+cCacodemoneTarocco: AH! Eresia, qui abbiamo un non fan dell'igiene personale. Intimiere e' un termine che ho coniato io, e' l'unione fra barbiere e intimo.
+cHT: Interessante, e perche' ora ti dedichi alla vendita di rasoi?
+cCacodemoneTarocco: Ho trovato troppe sorprese nei cespugli e ho deciso che la vendita di rasoi fosse la scelta piu' sicura.
+cHT: Capisco...
+option-off 2
+option-on 3
+return
+
+
+
+@3
+cHT: Puoi darmi qualche indicazione sul villaggio?
+cCacodemoneTarocco : Alla mia sinistra trovi l'officina di Bob, scendendo le scalinate troverai sulla destra l'ingresso alle miniere e sulla sinistra la tendopoli.
+cHT: Wow, villaggio molto grande.
+cCacodemoneTarocco: Perlomeno noi teniamo all'igiene intimo.
+return
+@4
+cCacodemoneTarocco: Rasoi, RASOIII!!!!
+stop
 ]]></Script>
             <DialogOptions>
               <DialogOption>
@@ -3353,21 +3395,21 @@ stop
               </DialogOption>
               <DialogOption>
                 <ID>2</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">Che lavoro svolgevi?</Text>
+                <Say>False</Say>
+                <Show>False</Show>
+                <Text>Intimiere?</Text>
               </DialogOption>
               <DialogOption>
                 <ID>3</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text />
+                <Say>False</Say>
+                <Show>False</Show>
+                <Text>Indicazioni</Text>
               </DialogOption>
               <DialogOption>
                 <ID>4</ID>
-                <Say>True</Say>
+                <Say>False</Say>
                 <Show>True</Show>
-                <Text />
+                <Text xml:space="preserve">Ci vediamo...</Text>
               </DialogOption>
             </DialogOptions>
           </Dialog>
@@ -3376,14 +3418,130 @@ stop
             <Name>dArlo</Name>
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
+@S
+
+ if(Game.DoOnceOnly("Primo incontro con Arlo come HT"))
+ {
+cHT: *coof* *coof*
+cPolish: *Rumore di saliva* Salve *Di nuovo rumore di saliva* Fratello.
+ }
+ else
+ {
+cPolish: Ehi fratello.
+cHT: Ehi mollusco.
+ }
+return
+
+@1
+cPolish: Mi chiamo Arlo, sono un rambdomante.
+cHT: Ed io che pensavo che la stupidita' fosse solo nativa del mio pianeta.
+cPolish: Che hai detto fratello? Ho appena provato un'erba particolare per affinare le mia abilita' magiche quindi sono un po' annebbiato.
+cHT: Oh nulla.
+option-off 1
+option-on 2
+return
+
+@2
+cPolish: Pace e amore fratello.
+stop]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Chi sei?</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Ci vediamo</Text>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>10</ID>
+            <Name>dBecca</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
+
 return
 ]]></Script>
             <DialogOptions />
           </Dialog>
           <Dialog>
-            <ID>10</ID>
-            <Name>dBecca</Name>
+            <ID>11</ID>
+            <Name>dArloEsploratore</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+ if(Game.DoOnceOnly("Primo incontro con Arlo come HT"))
+ {
+cPolish: *rumore di saliva* Viktor, non continuare a chiedermelo, non so cosa ci trovi la tua ex moglie di meglio in me.
+cHT: ...
+cPolish: non vorrai mica bruciarmi i campi di erbetta di nuovo, *solito rumore di saliva* vero???
+ }
+ else
+ {
+cPolish: Ciao Vik
+cHT: *grunt*
+cPolish: AAAAAAAAAAAAAAA
+ }
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>12</ID>
+            <Name>dCacodemoneEsploratore</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+
+ if(Game.DoOnceOnly("Primo incontro con caco come Esploratore"))
+ {
+cCacodemoneTarocco : Il mio ex-cliente preferito!
+cHT: ...
+cCacodemoneTarocco : Che c'e' Viktor...la tua cespugliosa ex-moglie ti ha tagliato la lingua? AHAHAHA
+cHT: Ho mal di gola, scusa.
+ }
+ else
+ {
+cCacodemoneTarocco: Chissa' che cespuglio avrai ora che sono fuori dai giochi...
+cHT: Non ti conviene scoprirlo.
+ }
+return
+@1
+cHT: ehm... *coof* *coof*, che si dice di nuovo?
+cCacodemoneTarocco : Ti vedo strano Viktor, come se non fossi in te.
+cHT: *coof* No tutto bene, solo allergia.
+cCacodemoneTarocco : Comunque nulla di nuovo, Arlo e' tornato al villaggio e anche quella prospettrice.
+cCacodemoneTarocco: E' un bel pezzo di alieno, anche per i miei standard bulbosi, dovresti rimetterti in campo sai?
+cHT: ci pensero'.
+option-off 1
+return
+@2
+cCacodemoneTarocco: Comprati un rasoio appena puoi straccione.
+return
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>False</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Dicerie nel villaggio</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Ci vediamo...</Text>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>13</ID>
+            <Name>dBeccaEsploratore</Name>
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
