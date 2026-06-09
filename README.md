@@ -1,8 +1,8 @@
 # Space-in-Disguise
 Videogioco punta e clicca (Progetto SDV 2025/2026)
 
+-Implementare enigma LAB
 
--Aggiustare walkable area del villaggio
--Implementare interazione protagonista-meccanico
--Implementare trasformazione protagonista-esploratore
--Aggiungere npc create da me e nicola al villaggio
+-Scegliere personaggio in cui trasformarsi
+
+-Implementare trasformazione e ultima parte
