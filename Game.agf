@@ -703,7 +703,7 @@
               <BackgroundImage>0</BackgroundImage>
               <BorderColor>0</BorderColor>
               <Clickable>False</Clickable>
-              <Height>20</Height>
+              <Height>40</Height>
               <ID>0</ID>
               <Left>0</Left>
               <Name>gActionBar</Name>
@@ -711,7 +711,7 @@
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Top>180</Top>
+              <Top>160</Top>
               <Transparency>0</Transparency>
               <Visible>True</Visible>
               <Width>320</Width>
@@ -722,18 +722,18 @@
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>20</Height>
+                <Height>40</Height>
                 <ID>0</ID>
-                <Left>-10</Left>
+                <Left>10</Left>
                 <Locked>False</Locked>
                 <Name>lblAction</Name>
                 <Text xml:space="preserve">label text</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>65535</TextColor>
-                <Top>3</Top>
+                <Top>0</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>320</Width>
+                <Width>300</Width>
                 <ZOrder>0</ZOrder>
               </GUILabel>
             </Controls>
@@ -2644,9 +2644,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>878</StartX>
-            <StartY>278</StartY>
-            <StartingRoom>4</StartingRoom>
+            <StartX>0</StartX>
+            <StartY>0</StartY>
+            <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -2818,7 +2818,7 @@
             <ScriptName>cPolish</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>512</SpeechColor>
+            <SpeechColor>2016</SpeechColor>
             <SpeechView>0</SpeechView>
             <StartX>274</StartX>
             <StartY>382</StartY>
@@ -2981,7 +2981,7 @@ cEsploratore: Come ti stavo dicendo, questi cristalli contengono un tipo di ener
 cEsploratore: Tuttavia, l'unico modo per estrarre questa energia e' far risuonare il nucleo del cristallo ad una frequenza molto potente.
 cEsploratore: La tua navicella e' qui fuori, corretto? Suppongo tu abbia qualcosa di utile a bordo.
 cHT: Daro' un'occhiata alle cose ancora intatte.
- 
+
  QuestEsploratore = true;
 return
 
@@ -3132,7 +3132,7 @@ option-off 2
 return
 
 @3
-cHT: Non sono cambiato, infatti lo faccio anche per noi. Questo alieno si è schiantato e vorrei effettuare un "Reverse engineering" della sua navicella, così facendo potrei scoprire tecnologie che potrebbero aiutarci.
+cHT: Non sono cambiato, infatti lo faccio anche per noi. Questo alieno si e' schiantato e vorrei effettuare un "Reverse engineering" della sua navicella, così facendo potrei scoprire tecnologie che potrebbero aiutarci.
 cHT: L'ho mandato qui per levarmelo di torno, in modo tale da poterla studiare meglio da vicino.
 cHT: Li ho indicato anche una strada di ritorno sbagliata, sai quella piena di burroni, sperando ci sia cascato dentro.
 cMeccanico: AHAHAHA, ora si che ti riconosco vecchio mio.
@@ -3193,10 +3193,6 @@ cEsploratore: Cosa ci fai di nuovo qui?
 cHT: Bob... mi ha cacciato, non aiuta le "xenospecie". Avresti potuto avvisarmi prima.
 cEsploratore: Mh...pensavo fosse cambiato ultimamente, lui e' l'unico qui che potrebbe darti una mano ed ora la situazione si complica.
  
- 
-
-  
-
 @1
 cEsploratore: Non posso permettermi di lasciare la grotta, ho scoperto qualcosa di impressionante qui e non lascero' che degli sciacalli rubino cio' che si trova qui.
 option-on 2
@@ -3464,9 +3460,12 @@ stop]]></Script>
             <Name>dBecca</Name>
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
-@S  // Dialog startup entry point
+@S  
+cHT: Ehila???
+cBecca: ....
+cHT: (Probabilmente non vorra' essere disturbata)
+stop
 
-return
 ]]></Script>
             <DialogOptions />
           </Dialog>
@@ -3522,7 +3521,7 @@ option-off 1
 return
 @2
 cCacodemoneTarocco: Comprati un rasoio appena puoi straccione.
-return
+stop
 ]]></Script>
             <DialogOptions>
               <DialogOption>
