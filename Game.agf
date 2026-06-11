@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>35</AudioIndexer>
+      <AudioIndexer>46</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -2450,6 +2450,63 @@
               <Event Index="4" />
             </Interactions>
           </InventoryItem>
+          <InventoryItem>
+            <CursorImage>0</CursorImage>
+            <Description xml:space="preserve">Capsula vuota</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>5</ID>
+            <Image>168</Image>
+            <Name>iCapsulaVuota</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>0</CursorImage>
+            <Description xml:space="preserve">Liquido refrigerante</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>6</ID>
+            <Image>170</Image>
+            <Name>iLiqRef</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>0</CursorImage>
+            <Description xml:space="preserve">Capsula aneutronica raffazzonata</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>7</ID>
+            <Image>169</Image>
+            <Name>iCapsulaPiena</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
         </InventoryItems>
       </InventoryItemFolder>
     </InventoryItems>
@@ -2644,9 +2701,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>0</StartX>
-            <StartY>0</StartY>
-            <StartingRoom>1</StartingRoom>
+            <StartX>522</StartX>
+            <StartY>104</StartY>
+            <StartingRoom>7</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -4114,6 +4171,34 @@ stop
           <ArrayType>None</ArrayType>
           <DefaultValue>false</DefaultValue>
           <Name>QuestMushyCompletata</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>enigmaLaboratorio</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>BancoInteragito</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>VasoInteragito</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue />
+          <Name>TrasformatoreInteragito</Name>
           <Type>bool</Type>
         </GlobalVariable>
       </Variables>
@@ -10186,6 +10271,71 @@ stop
                 <SourceFileName xml:space="preserve">C:\Users\Gabriele\Downloads\Drinking Magic Potions Free Sound Effect (mp3cut.net).mp3</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-06-09 19:40:20Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>16</ID>
+                <Index>36</Index>
+                <ScriptName>aBicchiereRotto</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\276939-gladkiy-breaking-glass-mirror-audio-technica-mb2k_PRxVmD05.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-11 11:11:22Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>17</ID>
+                <Index>37</Index>
+                <ScriptName>aRovistareBanco</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\127545-romulofs-glass-handling_IwvTDKsi.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-11 11:12:02Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>18</ID>
+                <Index>44</Index>
+                <ScriptName>aTrasformatore</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\541665_garuda1982_ratchet-belt-click-sound-effect (mp3cut.net)(1).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-11 11:27:50Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>100</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>19</ID>
+                <Index>45</Index>
+                <ScriptName>aTosse</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\456714_diidiintle_99_guy-cough (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-11 11:33:49Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>20</ID>
+                <Index>46</Index>
+                <ScriptName>aLeva</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\167048__drminky__old-lever-pull.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-11 11:35:01Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
