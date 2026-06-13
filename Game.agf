@@ -3028,7 +3028,7 @@ return
 @2
 cHT: Non sono di questo pianeta, mentre ero in orbita la mia navicella ha avuto un guasto e mi sono schiantato qui fuori.
 cHT: Questa e' casa tua?
-cEsploratore: Non e' casa mia, mi sembri un tipo strambo.
+cEsploratore: Non e' casa mia...mi sembri un tipo strambo.
 cEsploratore: Mi spiace per te, la dea bendata ti ha voltato le spalle portandoti qui.
 option-on 3
 option-off 2
@@ -3119,9 +3119,9 @@ stop
     
 cEsploratore: Incredibile...bastava un alieno sciagurato a far risuonare questi cristalli.
 cHT: Parla per te...primitivo.
-cEsploratore: Grazie all'energia sprigionata dal cristallo sono riuscito a ricaricare questa Geo-Mappa.
+cEsploratore: Grazie all'energia sprigionata dal cristallo sono riuscito a ricaricare ance questa 'geo-mappa'.
 cHT: Wow, incredibile.
-cEsploratore: Ignorero' l'insulto e le tue battute sarcastiche e vorrei ricambiare il favore adesso.
+cEsploratore: Ignorero' le tue battute sarcastiche e vorrei ricambiare il favore adesso.
 cEsploratore: Ho un amico che forse puo' darti una mano con la tua navicella.
 cEsploratore: Tieni, questa mappa ti servira' per raggiungere un villaggio qui vicino dove troverai questa persona.
 cHT: Allora non mi hai fatto perdere tempo.
@@ -3175,7 +3175,7 @@ cMeccanico: Vai alla miniera giu' del villaggio, non rimarrai deluso.
 return
 
 @1
-cMeccanico: Sempre sul pezzo, vacchio amico mio.
+cMeccanico: Sempre sul pezzo, vecchio amico mio.
 cMeccanico: Quando ti decidi a cambiare casa?
 cHT: Ehm...ah si la grotta intendi...non appena trovero' un posto accogliente come quello.
 cMeccanico: Hahahaha riesci a chiamare quel luridume posto accogliente.
@@ -3190,14 +3190,14 @@ cMeccanico: Intendi la tua ex moglie che ti ha lasciato per un Mollusco vero? AH
 cHT: AHAHA...AH...AH...intendevo un alieno non di queste parti.
 cMeccanico: Mh si e mi ha chiesto di te, pero' non mi fido.
 cMeccanico: E' andato via non molto tempo fa, amico tuo o no non intendo aiutare stranieri, vedi in che condizioni versiamo noi.
-cHT: Non e' un mio amico, pero' mi e' stato molto di aiuto, quindi vorrei ricambiargli il favore.
+cHT: Non e' un mio amico, pero' mi e' stato molto di aiuto.
 cMeccanico: Non me lo aspettavo da te, pensavo tenessi a cuore noi e ora vai in giro ad aiutare xenospecie?!
 option-on 3
 option-off 2
 return
 
 @3
-cHT: Non sono cambiato, infatti lo faccio anche per noi. Questo alieno si e' schiantato e vorrei effettuare un "Reverse engineering" della sua navicella, così facendo potrei scoprire tecnologie che potrebbero aiutarci.
+cHT: Non sono cambiato, infatti lo faccio per noi. Questo alieno si e' schiantato e vorrei effettuare un "reverse engineering" della sua navicella, così facendo potrei scoprire tecnologie che potrebbero aiutarci.
 cHT: L'ho mandato qui per levarmelo di torno, in modo tale da poterla studiare meglio da vicino.
 cHT: Li ho indicato anche una strada di ritorno sbagliata, sai quella piena di burroni, sperando ci sia cascato dentro.
 cMeccanico: AHAHAHA, ora si che ti riconosco vecchio mio.
@@ -3215,8 +3215,10 @@ cMeccanico: Un attimo che cerco una chiave...
  aC.Play(eAudioPriorityHigh);
  Wait(240);
 cMeccanico: Ecco qua, con questa vai alla miniera giu' nel villaggio, potresti trovare qualcosa di utile li...
+cMeccanico: Non sei entusiasta? Torni in uno dei tuoi vecchi laboratori!
+cHT: *coof* Ehm...si lo sono...mi hai preso alla sprovvista.
  player.AddInventory(iChiave);
-cHT: Grazie rospone
+cHT: Grazie rospone.
 option-off 4
 stop
 
@@ -3254,9 +3256,15 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
+  if(Game.DoOnceOnly("Pre-Trasformazione"))
+  {   
 cEsploratore: Cosa ci fai di nuovo qui?
 cHT: Bob... mi ha cacciato, non aiuta le "xenospecie". Avresti potuto avvisarmi prima.
 cEsploratore: Mh...pensavo fosse cambiato ultimamente, lui e' l'unico qui che potrebbe darti una mano ed ora la situazione si complica.
+  }
+  else
+cEsploratore: Cosa stavi dicendo?
+return
  
 @1
 cEsploratore: Non posso permettermi di lasciare la grotta, ho scoperto qualcosa di impressionante qui e non lascero' che degli sciacalli rubino cio' che si trova qui.
@@ -3286,9 +3294,10 @@ cHT: Adesso concentrati, altrimenti non funzionera' mai
   Wait(20);
   TrasformatoInEsploratore = true;
   FadeIn(64);
-  // Fine blocco codice
+
 
 cEsploratore: Ma... ma quello sono io! Non capisco come la mia ex abbia potuto lasciare un fusto del genere.
+option-off 3
 stop
 
 @4
@@ -3339,7 +3348,7 @@ return
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cMushy: Ciaooo, come e e staaai i i i???
+cMushy: Ciaooo, comeee staaaiiii???
 cHT: Ciaaoooo, tutto bene!!!
 return
 
@@ -3377,13 +3386,13 @@ cMushy: Ciao Viiiktor :)
 return
 @1
 cMushy: Devo essere sincero, ti ho visto parlare col rospone.
-cMushy: Potrei anche aver origliato un po'.
+cMushy: Potrei aver origliato un po'.
 cMushy: So dove devi andare e non puoi.
 cMushy: C'e' una nube tossica piu avanti e l'unico modo per accedere e' tramite uno dei miei fantastici preparati.
 cHT: Allora dammene uno, aiuta un tuo vecchio amico.
 cMushy: Ahahah non correre Viktor, ogni cosa ha un suo prezzo.
-cMushy: Sono molto a corto di risorse, portami una scorta di funghetti e ti aiuterò.
-cHT:Non credo di avere altra scelta, ti portero' qualcosa.
+cMushy: Sono molto a corto di risorse, portami una scorta di funghetti e ti aiutero'.
+cHT: Non credo di avere altra scelta, ti portero' qualcosa.
 cMushy: Grazie Viktor, sei il migliore, non come quel mollusco che si e' preso tua moglie.
 option-off 1
 stop
@@ -3540,7 +3549,7 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
- if(Game.DoOnceOnly("Primo incontro con Arlo come HT"))
+ if(Game.DoOnceOnly("Arlo e Esploratore"))
  {
 cPolish: *rumore di saliva* Viktor, non continuare a chiedermelo, non so cosa ci trovi la tua ex moglie di meglio in me.
 cHT: ...
@@ -3633,7 +3642,7 @@ cHT: Ok, *GULP* provo a berla.
  Wait(40);
  aBere.Play();
  Wait(100);
-cHT: Spero per te che funzioni, ma cosa c'è lì in fondo?
+cHT: Spero per te che funzioni, ma cosa c'e' lì in fondo?
 cMushy: Viktooor ma cooome non ti riiicordi? C'e' uno deeei tuuoi veeecchi laaaboratorii.
 cHT: Ah certo, giusto. Per un attimo mi sono scordato, la tua roba sta facendo gia' effetto.
 stop
@@ -3657,7 +3666,7 @@ HT: Se ho capito bene, dovrebbe essere un nucleo raffreddante, cio' che serve al
 Becca: l'ultima di cosa di cui abbiamo bisogno e' qualche xenospecie pazza colonizzatrice, prendi cio' che ti serve e levati di torno, abbiamo gia' troppi problemi qua.
  player.Walk(cBecca.x - 20, cBecca.y, eBlock, eWalkableAreas);
  player.AddInventory(iLiqRef); 
-Becca: Non farti mai più vedere!
+Becca: Non farti mai piu' vedere!
   cBecca.Walk(201, 56, eBlock, eWalkableAreas); 
   
   while (cBecca.Transparency < 100)
@@ -3676,7 +3685,7 @@ Becca: Non farti mai più vedere!
   cBecca.x = -100;
   cBecca.y = -100;
   
-HT: uff! Me la sono vista brutta  
+HT: uff! Me la sono vista brutta. 
  cBecca.ChangeRoom(-1);
  TrasformatoInEsploratore = false;
 
