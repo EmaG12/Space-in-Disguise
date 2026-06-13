@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>46</AudioIndexer>
+      <AudioIndexer>53</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -689,6 +689,14 @@
           <UnloadedRoom>
             <Description IsNull="True" />
             <Number>8</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>9</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>10</Number>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -2465,7 +2473,7 @@
               <Event Index="0" />
               <Event Index="1" />
               <Event Index="2" />
-              <Event Index="3" />
+              <Event Index="3">iCapsulaVuota_UseInv</Event>
               <Event Index="4" />
             </Interactions>
           </InventoryItem>
@@ -2484,7 +2492,7 @@
               <Event Index="0" />
               <Event Index="1" />
               <Event Index="2" />
-              <Event Index="3" />
+              <Event Index="3">iLiqRef_UseInv</Event>
               <Event Index="4" />
             </Interactions>
           </InventoryItem>
@@ -2701,9 +2709,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>522</StartX>
-            <StartY>104</StartY>
-            <StartingRoom>7</StartingRoom>
+            <StartX>0</StartX>
+            <StartY>0</StartY>
+            <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -3629,6 +3637,52 @@ cHT: Spero per te che funzioni, ma cosa c'è lì in fondo?
 cMushy: Viktooor ma cooome non ti riiicordi? C'e' uno deeei tuuoi veeecchi laaaboratorii.
 cHT: Ah certo, giusto. Per un attimo mi sono scordato, la tua roba sta facendo gia' effetto.
 stop
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>15</ID>
+            <Name>dSpiegazione</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[@S
+HT: Aspetta, ti prego! Non voglio farti del male.
+HT: Mi chiamo Harrison... Vengo da un pianeta molto lontano.
+HT: Sono dovuto fuggire. Il mio mondo sta collassando a causa di un disastro ecologico, proprio come e' successo qui.
+Becca: Tu... tu sei un alieno?! Resta indietro!
+Becca: Non ho mai visto una creatura come te.
+HT: Voglio solo andarmene. La mia navicella è in avaria.
+HT: Ho raccolto un pezzo, ma credo che mi servirà altro per renderlo funzionante.
+Becca: Ho visto cosa hai preso, tieni questa boccetta, contiene del liquido refrigerante, combinalo con cio' che hai preso.
+HT: Se ho capito bene, dovrebbe essere un nucleo raffreddante, cio' che serve alla mia navicella! Ma perche' me lo cedi cosi facilmente?
+Becca: l'ultima di cosa di cui abbiamo bisogno e' qualche xenospecie pazza colonizzatrice, prendi cio' che ti serve e levati di torno, abbiamo gia' troppi problemi qua.
+ player.Walk(cBecca.x - 20, cBecca.y, eBlock, eWalkableAreas);
+ player.AddInventory(iLiqRef); 
+Becca: Non farti mai più vedere!
+  cBecca.Walk(201, 56, eBlock, eWalkableAreas); 
+  
+  while (cBecca.Transparency < 100)
+  {
+    if (cBecca.Transparency <= 95) 
+    {
+      cBecca.Transparency = cBecca.Transparency + 5;
+    }
+    else 
+    {
+      cBecca.Transparency = 100; 
+    }
+    Wait(1);
+  }
+  
+  cBecca.x = -100;
+  cBecca.y = -100;
+  
+HT: uff! Me la sono vista brutta  
+ cBecca.ChangeRoom(-1);
+ TrasformatoInEsploratore = false;
+
+stop
+
+
 ]]></Script>
             <DialogOptions />
           </Dialog>
@@ -10065,6 +10119,19 @@ stop
                 <Type>2</Type>
                 <FileLastModifiedDate>2026-06-05 09:17:46Z</FileLastModifiedDate>
               </AudioClip>
+              <AudioClip>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>23</ID>
+                <Index>53</Index>
+                <ScriptName>aSci_Fi_6_Loop</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Desktop\Sci-Fi 6 Loop.mp3</SourceFileName>
+                <Type>2</Type>
+                <FileLastModifiedDate>2023-02-17 10:20:48Z</FileLastModifiedDate>
+              </AudioClip>
             </AudioClips>
             <AudioClipFolder>
               <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
@@ -10336,6 +10403,32 @@ stop
                 <SourceFileName>C:\Users\old64\Downloads\167048__drminky__old-lever-pull.wav</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-06-11 11:35:01Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>25</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>21</ID>
+                <Index>51</Index>
+                <ScriptName>aJetOn</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\322178_ikbenraar_f16-fighter-jet-start-up (mp3cut.net).wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-12 17:11:39Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>22</ID>
+                <Index>52</Index>
+                <ScriptName>aJetOff</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\44813__doobit__jetpropdown1 (mp3cut.net).wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-12 17:23:10Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
