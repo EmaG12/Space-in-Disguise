@@ -4,3 +4,4 @@ Game : (room:2) [room2.asc:127] WARNING: String format: missing argument 1.
 Game : (room:2) [room2.asc:127] WARNING: String format: missing argument 1.
 	Format string:
 	"Ottimo, 21% di ossigeno nell'atmosfera...questo pianeta ospitera' sicuramente qualche forma di vita primitiva. Spero non mi sbrani."
+Game : (room:3) Dialog: all options have been turned off, stopping dialog.
