@@ -2520,7 +2520,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iGeoMappa_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -2539,7 +2539,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iChiave_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -2558,7 +2558,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iFungo_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -2577,7 +2577,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iCapsulaVuota_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3">iCapsulaVuota_UseInv</Event>
@@ -2596,7 +2596,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iLiqRef_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3">iLiqRef_UseInv</Event>
@@ -2615,7 +2615,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iCapsulaPiena_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -3820,6 +3820,7 @@ Becca: l'ultima di cosa di cui abbiamo bisogno e' qualche xenospecie pazza colon
  
  player.Walk(cBecca.x - 20, cBecca.y, eBlock, eWalkableAreas);
  player.AddInventory(iLiqRef); 
+ Display("Hai ottenuto Liquido Refrigerante.");
 Becca: Non farti mai piu' vedere!
 
  StartCutscene(eSkipESCOnly); 
