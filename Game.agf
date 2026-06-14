@@ -2027,7 +2027,7 @@
               <Left>40</Left>
               <Name>gMinigioco</Name>
               <OnClick />
-              <PopupStyle>Normal</PopupStyle>
+              <PopupStyle>PopupModal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <ScriptModule>GlobalScript.asc</ScriptModule>
               <Top>25</Top>
@@ -2445,7 +2445,7 @@
                 <TextColor>0</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>60</Top>
+                <Top>59</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>110</Width>
@@ -2816,8 +2816,8 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>282</StartX>
-            <StartY>172</StartY>
+            <StartX>0</StartX>
+            <StartY>0</StartY>
             <StartingRoom>0</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
@@ -3358,10 +3358,9 @@ option-off 3
 return
 
 @4
-cHT: Sicuramente avrai qualcosa per far ripartire quel rottame.
-cMeccanico: Potrei...ma ad una condizione.
-CMeccanico: Mi devi portare qualche pezzo di tecnologia aliena...riuscirei a ricavarne una fortuna.
-cHT: Accetto, ma adesso muoviti e dammi qualcosa.
+cHT: Ho bisogno di qualcosa per far ripartire quella nave.
+cHT: Deve essere funzionante per recupare qualche tecnologia aliena.
+cMeccanico: Non ho nulla da darti se non questa...
 cMeccanico: Un attimo che cerco una chiave...
  aC.Play(eAudioPriorityHigh);
  Wait(240);
@@ -3371,7 +3370,7 @@ cHT: *coof* Ehm...si lo sono...mi hai preso alla sprovvista.
  player.AddInventory(iChiave);
  ParlatoconBob = true;
 cHT: Grazie rospone.
- 
+ Display("Hai ottenuto la chiave per la miniera.");
 option-off 4
 stop
 
@@ -3386,19 +3385,19 @@ stop
               <DialogOption>
                 <ID>2</ID>
                 <Say>False</Say>
-                <Show>False</Show>
+                <Show>True</Show>
                 <Text xml:space="preserve">Alieno rompiscatole</Text>
               </DialogOption>
               <DialogOption>
                 <ID>3</ID>
                 <Say>False</Say>
-                <Show>False</Show>
+                <Show>True</Show>
                 <Text xml:space="preserve">Navicella schiantata</Text>
               </DialogOption>
               <DialogOption>
                 <ID>4</ID>
                 <Say>False</Say>
-                <Show>False</Show>
+                <Show>True</Show>
                 <Text>Aiuto</Text>
               </DialogOption>
             </DialogOptions>
@@ -3531,8 +3530,9 @@ stop
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
  if(Game.DoOnceOnly("Mushy e il travestito")){
-cMushy:Ehi Viktor, cosa ci fai da queste parti, non ti si vede mai???
-cHT: Sono solo di passaggio, ho una cosa importante da fare.
+cMushy:Ehi Viktor, avvicinati un secondo.
+cHT: Non ho tempo da perdere, ho una cosa importante da fare.
+cMushy: Ci vorra' solo un attimo...promesso :)
  }
   else
 cMushy: Ciao Viiiktor :)
@@ -3547,6 +3547,8 @@ cMushy: Ahahah non correre Viktor, ogni cosa ha un suo prezzo.
 cMushy: Sono molto a corto di risorse, portami una scorta di funghetti e ti aiutero'.
 cHT: Non credo di avere altra scelta, ti portero' qualcosa.
 cMushy: Grazie Viktor, sei il migliore, non come quel mollusco che si e' preso tua moglie.
+  MushyParlatoFuoriMiniera = true;
+  QuestAttivaMushy = true;
 option-off 1
 stop
 
@@ -3798,6 +3800,7 @@ cHT: Ok, *GULP* provo a berla.
 cHT: Spero per te che funzioni, ma cosa c'e' lì in fondo?
 cMushy: Viktooor ma cooome non ti riiicordi? C'e' uno deeei tuuoi veeecchi laaaboratorii.
 cHT: Ah certo, giusto. Per un attimo mi sono scordato, la tua roba sta facendo gia' effetto.
+ QuestMushyCompletata = true;
 stop
 ]]></Script>
             <DialogOptions />
@@ -3849,6 +3852,48 @@ stop
 
 ]]></Script>
             <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>16</ID>
+            <Name>dMushyNubeProblema</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+ if(Game.DoOnceOnly("Mushy e il travestito")){
+cMushy:Ehi Viktor, avvicinati un secondo.
+cHT: Non ho tempo da perdere, ho una cosa importante da fare.
+cMushy: Ci vorra' solo un attimo...promesso :)
+ }
+  else
+  {
+cMushy: Brutta nube eh?
+cHT: Gia'
+  }
+return
+@1
+cMushy: Ti ho visto entrare nella miniera prima...
+cHT: Si spione.
+cMushy: Devo essere sincero, ti ho visto parlare col rospone.
+cMushy: Potrei aver origliato un po'.
+cMushy: So dove devi andare e non puoi.
+cMushy: C'e' una nube tossica piu avanti e l'unico modo per accedere e' tramite uno dei miei fantastici preparati.
+cHT: Si, ho visto, una bella nube...dammi un tuo preparato.
+cMushy: Ahahah non correre Viktor, ogni cosa ha un suo prezzo.
+cMushy: Sono molto a corto di risorse, portami una scorta di funghetti e ti aiutero'.
+cHT: Non credo di avere altra scelta, ti portero' qualcosa.
+cMushy: Grazie Viktor, sei il migliore, non come quel mollusco che si e' preso tua moglie.
+ QuestAttivaMushy = true;
+option-off 1
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>False</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Funghi allucinogeni pt.2</Text>
+              </DialogOption>
+            </DialogOptions>
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -4424,6 +4469,27 @@ stop
           <ArrayType>None</ArrayType>
           <DefaultValue>false</DefaultValue>
           <Name>ParlatoconBob</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>ProblemaNube</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>MushyParlatoFuoriMiniera</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>QuestAttivaMushy</Name>
           <Type>bool</Type>
         </GlobalVariable>
       </Variables>

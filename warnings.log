@@ -4,14 +4,7 @@ Game : (room:2) [room2.asc:127] WARNING: String format: missing argument 1.
 Game : (room:2) [room2.asc:127] WARNING: String format: missing argument 1.
 	Format string:
 	"Ottimo, 21% di ossigeno nell'atmosfera...questo pianeta ospitera' sicuramente qualche forma di vita primitiva. Spero non mi sbrani."
-<<<<<<< HEAD
-=======
 Game : (room:3) Dialog: all options have been turned off, stopping dialog.
-<<<<<<< HEAD
-=======
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
+Game : (room:4) [GlobalScript.asc:890] !RunDialog: Cannot run this command, since there was a RunDialog command already queued to run in "GlobalScript.asc", line 888
+Game : (room:4) [GlobalScript.asc:890] !RunDialog: Cannot run this command, since there was a RunDialog command already queued to run in "GlobalScript.asc", line 888
 Game : (room:4) Dialog: all options have been turned off, stopping dialog.
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
-Game : (room:6) Dialog: all options have been turned off, stopping dialog.
->>>>>>> 934c7e8a45f62a3f1f0c151c89e237a36c38976f
->>>>>>> a56e9fe168dcd15e258d2eb52bfd62720d612cc4
