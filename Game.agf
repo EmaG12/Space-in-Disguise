@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>56</AudioIndexer>
+      <AudioIndexer>57</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -58,7 +58,7 @@
       <OptimizeSpriteStorage>True</OptimizeSpriteStorage>
       <PixelPerfect>True</PixelPerfect>
       <PlaySoundOnScore>0</PlaySoundOnScore>
-      <ReleaseDate>2022-03-01</ReleaseDate>
+      <ReleaseDate>2026-06-18</ReleaseDate>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
       <RoomTransition>FadeOutAndIn</RoomTransition>
       <RunGameLoopsWhileDialogOptionsDisplayed>True</RunGameLoopsWhileDialogOptionsDisplayed>
@@ -2491,7 +2491,7 @@
         <InventoryItems>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description xml:space="preserve">Allarme navicella</Description>
+            <Description xml:space="preserve">allarme della navicella.</Description>
             <HotspotX>6</HotspotX>
             <HotspotY>3</HotspotY>
             <ID>1</ID>
@@ -2510,7 +2510,7 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description>Geo-Mappa</Description>
+            <Description>geo-mappa.</Description>
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <ID>2</ID>
@@ -2529,7 +2529,7 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description xml:space="preserve">Chiave per la miniera</Description>
+            <Description xml:space="preserve">chiave per la miniera.</Description>
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <ID>3</ID>
@@ -2567,7 +2567,7 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description xml:space="preserve">Capsula vuota</Description>
+            <Description xml:space="preserve">capsula vuota.</Description>
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <ID>5</ID>
@@ -2586,7 +2586,7 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description xml:space="preserve">Liquido refrigerante</Description>
+            <Description xml:space="preserve">liquido refrigerante.</Description>
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <ID>6</ID>
@@ -2605,7 +2605,7 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description xml:space="preserve">Capsula aneutronica raffazzonata</Description>
+            <Description xml:space="preserve">cella di raffreddamento raffazzonata.</Description>
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <ID>7</ID>
@@ -10384,6 +10384,19 @@ stop
                 <SourceFileName xml:space="preserve">C:\Users\old64\Desktop\Sci-Fi 6 Loop.mp3</SourceFileName>
                 <Type>2</Type>
                 <FileLastModifiedDate>2026-06-14 11:07:01Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>67</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>27</ID>
+                <Index>57</Index>
+                <ScriptName>aWhisper</ScriptName>
+                <SourceFileName>C:\Users\old64\Desktop\Whisper.mp3</SourceFileName>
+                <Type>2</Type>
+                <FileLastModifiedDate>2024-10-19 08:12:54Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
