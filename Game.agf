@@ -2816,15 +2816,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-<<<<<<< HEAD
             <StartX>282</StartX>
             <StartY>172</StartY>
             <StartingRoom>0</StartingRoom>
-=======
-            <StartX>0</StartX>
-            <StartY>0</StartY>
-            <StartingRoom>1</StartingRoom>
->>>>>>> 73ed10dc3820e436e22ec26f23de1c6c7bc49f90
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -10296,7 +10290,7 @@ stop
                 <ScriptName>aSci_Fi_6_Loop</ScriptName>
                 <SourceFileName xml:space="preserve">C:\Users\old64\Desktop\Sci-Fi 6 Loop.mp3</SourceFileName>
                 <Type>2</Type>
-                <FileLastModifiedDate>2023-02-17 10:20:48Z</FileLastModifiedDate>
+                <FileLastModifiedDate>2026-06-14 11:07:01Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>

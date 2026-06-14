@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-Game : (room:0) [VerbCoin.asc:451] MoveCharacter: character cHT is turned off and cannot be moved
-=======
 Game : (room:2) [room2.asc:127] WARNING: String format: missing argument 1.
 	Format string:
 	"Ottimo, 21% di ossigeno nell'atmosfera...questo pianeta ospitera' sicuramente qualche forma di vita primitiva. Spero non mi sbrani."
 Game : (room:2) [room2.asc:127] WARNING: String format: missing argument 1.
 	Format string:
 	"Ottimo, 21% di ossigeno nell'atmosfera...questo pianeta ospitera' sicuramente qualche forma di vita primitiva. Spero non mi sbrani."
->>>>>>> 73ed10dc3820e436e22ec26f23de1c6c7bc49f90
