@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>53</AudioIndexer>
+      <AudioIndexer>56</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -10482,6 +10482,45 @@ stop
                 <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\44813__doobit__jetpropdown1 (mp3cut.net).wav</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-06-12 17:23:10Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>25</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>24</ID>
+                <Index>54</Index>
+                <ScriptName>aJointer</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\freesound_community-jointer-plane-87477 (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-14 10:42:59Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>25</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>25</ID>
+                <Index>55</Index>
+                <ScriptName>aTrapano</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\freesound_community-drill-87927 (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-14 10:42:23Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>25</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>26</ID>
+                <Index>56</Index>
+                <ScriptName>aSega</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\freesound_community-woodcutting-35994.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-14 10:35:46Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
