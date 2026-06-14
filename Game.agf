@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>53</AudioIndexer>
+      <AudioIndexer>56</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -655,7 +655,7 @@
         <SubFolders />
         <UnloadedRooms>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Menu Principale</Description>
             <Number>0</Number>
           </UnloadedRoom>
           <UnloadedRoom>
@@ -872,14 +872,14 @@
                 <Height>18</Height>
                 <ID>0</ID>
                 <Image>2160</Image>
-                <Left>10</Left>
+                <Left>118</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>btnConfirmedQuit</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnConfirmedQuit_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Quit</Text>
+                <Text>Esci</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
@@ -900,14 +900,14 @@
                 <Height>18</Height>
                 <ID>1</ID>
                 <Image>2160</Image>
-                <Left>122</Left>
+                <Left>15</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>btnPlay</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>close_gui_onclick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Play</Text>
+                <Text>Gioca</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
@@ -928,10 +928,10 @@
                 <Left>24</Left>
                 <Locked>False</Locked>
                 <Name>lQuitWindowText</Name>
-                <Text xml:space="preserve">Are you sure you want to quit?</Text>
+                <Text xml:space="preserve">Sei sicuro di voler uscire?</Text>
                 <TextAlignment>TopLeft</TextAlignment>
                 <TextColor>19248</TextColor>
-                <Top>5</Top>
+                <Top>4</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>150</Width>
@@ -1099,12 +1099,12 @@
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>21</Height>
+                <Height>24</Height>
                 <ID>0</ID>
                 <Left>8</Left>
                 <Locked>False</Locked>
                 <Name>lblRestoreText</Name>
-                <Text xml:space="preserve">Please choose the game that you want to restore:</Text>
+                <Text xml:space="preserve">Scegli il salvataggio che vuoi caricare</Text>
                 <TextAlignment>TopLeft</TextAlignment>
                 <TextColor>19248</TextColor>
                 <Top>2</Top>
@@ -1129,12 +1129,12 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnRestoreGame_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Restore</Text>
+                <Text>Carica</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>106</Top>
+                <Top>105</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1157,12 +1157,12 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>close_gui_onclick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Cancel</Text>
+                <Text>Esci</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>131</Top>
+                <Top>130</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1175,7 +1175,7 @@
                 <Font>0</Font>
                 <Height>118</Height>
                 <ID>3</ID>
-                <Left>6</Left>
+                <Left>8</Left>
                 <Locked>False</Locked>
                 <Name>lstRestoreGamesList</Name>
                 <OnSelectionChanged />
@@ -1185,7 +1185,7 @@
                 <ShowScrollArrows>True</ShowScrollArrows>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>19248</TextColor>
-                <Top>30</Top>
+                <Top>31</Top>
                 <Translated>False</Translated>
                 <Visible>True</Visible>
                 <Width>170</Width>
@@ -1220,13 +1220,13 @@
                 <Font>0</Font>
                 <Height>25</Height>
                 <ID>0</ID>
-                <Left>8</Left>
+                <Left>6</Left>
                 <Locked>False</Locked>
                 <Name>lblSaveText</Name>
-                <Text xml:space="preserve">Please choose the name to save this game as:</Text>
+                <Text xml:space="preserve">Inserisci il nome per questo salvataggio</Text>
                 <TextAlignment>TopLeft</TextAlignment>
                 <TextColor>19248</TextColor>
-                <Top>2</Top>
+                <Top>3</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>236</Width>
@@ -1267,7 +1267,7 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnSaveGame_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Save</Text>
+                <Text>Salva</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
@@ -1295,7 +1295,7 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>close_gui_onclick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Cancel</Text>
+                <Text>Esci</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
@@ -1345,7 +1345,7 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnDeleteSave_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Delete</Text>
+                <Text>Cancella</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
@@ -1396,12 +1396,12 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>close_gui_onclick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Resume</Text>
+                <Text>Riprendi</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>110</Top>
+                <Top>7</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1424,12 +1424,12 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnSave_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Save</Text>
+                <Text>Salva</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>5</Top>
+                <Top>28</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1452,12 +1452,12 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnAbout_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>About</Text>
+                <Text>Info</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>88</Top>
+                <Top>112</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1480,12 +1480,12 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnQuit_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Quit</Text>
+                <Text>Esci</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>67</Top>
+                <Top>133</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1576,7 +1576,7 @@
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>130</Top>
+                <Top>91</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1599,12 +1599,12 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnLoad_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Load</Text>
+                <Text>Carica</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>25</Top>
+                <Top>49</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1620,7 +1620,7 @@
                 <Left>114</Left>
                 <Locked>False</Locked>
                 <Name>lblVolume</Name>
-                <Text xml:space="preserve">Audio Volume</Text>
+                <Text xml:space="preserve">Volume Audio </Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <Top>10</Top>
@@ -1638,7 +1638,7 @@
                 <Left>114</Left>
                 <Locked>False</Locked>
                 <Name>lblVoice</Name>
-                <Text xml:space="preserve">Voice Volume</Text>
+                <Text xml:space="preserve">Volume Voce</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <Top>40</Top>
@@ -1723,7 +1723,7 @@
                 <Left>114</Left>
                 <Locked>False</Locked>
                 <Name>lblSpeed</Name>
-                <Text>Speed</Text>
+                <Text>Velocita'</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <Top>121</Top>
@@ -1748,12 +1748,12 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnRestart_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Restart</Text>
+                <Text>Menu'</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>46</Top>
+                <Top>70</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1792,7 +1792,7 @@
                 <Left>24</Left>
                 <Locked>False</Locked>
                 <Name>lRestartText</Name>
-                <Text xml:space="preserve">Are you sure you want to restart?</Text>
+                <Text xml:space="preserve">Sei sicuro di voler tornare al menu'?</Text>
                 <TextAlignment>TopLeft</TextAlignment>
                 <TextColor>19248</TextColor>
                 <Top>5</Top>
@@ -1817,7 +1817,7 @@
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnRestartYes_OnClick</OnClick>
                 <PushedImage>2161</PushedImage>
-                <Text>Yes</Text>
+                <Text>Si</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
@@ -2375,6 +2375,113 @@
               </GUIButton>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <BorderColor>0</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>140</Height>
+              <ID>11</ID>
+              <Left>40</Left>
+              <Name>gMainMenu</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Top>30</Top>
+              <Transparency>0</Transparency>
+              <Visible>True</Visible>
+              <Width>240</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>20</Height>
+                <ID>0</ID>
+                <Image>0</Image>
+                <Left>70</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Button2</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Button2_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text xml:space="preserve">Nuova Partita</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>25</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>110</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>0</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>20</Height>
+                <ID>1</ID>
+                <Image>0</Image>
+                <Left>70</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Button3</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Button3_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text>Continua</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>60</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>110</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>1</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>20</Height>
+                <ID>2</ID>
+                <Image>0</Image>
+                <Left>70</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Button5</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Button5_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text>Esci</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <TextPaddingHorizontal>2</TextPaddingHorizontal>
+                <TextPaddingVertical>2</TextPaddingVertical>
+                <Top>95</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>110</Width>
+                <WrapText>False</WrapText>
+                <ZOrder>2</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -2394,7 +2501,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iAllarme_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -2413,7 +2520,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iGeoMappa_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -2432,7 +2539,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iChiave_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -2451,7 +2558,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iFungo_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -2470,7 +2577,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iCapsulaVuota_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3">iCapsulaVuota_UseInv</Event>
@@ -2489,7 +2596,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iLiqRef_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3">iLiqRef_UseInv</Event>
@@ -2508,7 +2615,7 @@
             <Properties />
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0" />
+              <Event Index="0">iCapsulaPiena_Look</Event>
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -2709,9 +2816,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>0</StartX>
-            <StartY>0</StartY>
-            <StartingRoom>1</StartingRoom>
+            <StartX>282</StartX>
+            <StartY>172</StartY>
+            <StartingRoom>0</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
@@ -3262,7 +3369,9 @@ cMeccanico: Ecco qua, con questa vai alla miniera giu' nel villaggio, potresti t
 cMeccanico: Non sei entusiasta? Torni in uno dei tuoi vecchi laboratori!
 cHT: *coof* Ehm...si lo sono...mi hai preso alla sprovvista.
  player.AddInventory(iChiave);
+ ParlatoconBob = true;
 cHT: Grazie rospone.
+ 
 option-off 4
 stop
 
@@ -3708,11 +3817,14 @@ HT: Ho raccolto un pezzo, ma credo che mi servirà altro per renderlo funzionant
 Becca: Ho visto cosa hai preso, tieni questa boccetta, contiene del liquido refrigerante, combinalo con cio' che hai preso.
 HT: Se ho capito bene, dovrebbe essere un nucleo raffreddante, cio' che serve alla mia navicella! Ma perche' me lo cedi cosi facilmente?
 Becca: l'ultima di cosa di cui abbiamo bisogno e' qualche xenospecie pazza colonizzatrice, prendi cio' che ti serve e levati di torno, abbiamo gia' troppi problemi qua.
+ 
  player.Walk(cBecca.x - 20, cBecca.y, eBlock, eWalkableAreas);
  player.AddInventory(iLiqRef); 
+ Display("Hai ottenuto Liquido Refrigerante.");
 Becca: Non farti mai piu' vedere!
-  cBecca.Walk(201, 56, eBlock, eWalkableAreas); 
-  
+
+ StartCutscene(eSkipESCOnly); 
+  cBecca.Walk(201, 56, eBlock, eWalkableAreas);   
   while (cBecca.Transparency < 100)
   {
     if (cBecca.Transparency <= 95) 
@@ -3724,11 +3836,10 @@ Becca: Non farti mai piu' vedere!
       cBecca.Transparency = 100; 
     }
     Wait(1);
-  }
-  
+  }  
   cBecca.x = -100;
   cBecca.y = -100;
-  
+ EndCutscene();
 HT: uff! Me la sono vista brutta. 
  cBecca.ChangeRoom(-1);
  TrasformatoInEsploratore = false;
@@ -4304,8 +4415,15 @@ stop
         <GlobalVariable>
           <ArraySize>0</ArraySize>
           <ArrayType>None</ArrayType>
-          <DefaultValue />
+          <DefaultValue>false</DefaultValue>
           <Name>TrasformatoreInteragito</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <ArraySize>0</ArraySize>
+          <ArrayType>None</ArrayType>
+          <DefaultValue>false</DefaultValue>
+          <Name>ParlatoconBob</Name>
           <Type>bool</Type>
         </GlobalVariable>
       </Variables>
@@ -10183,7 +10301,7 @@ stop
                 <ScriptName>aSci_Fi_6_Loop</ScriptName>
                 <SourceFileName xml:space="preserve">C:\Users\old64\Desktop\Sci-Fi 6 Loop.mp3</SourceFileName>
                 <Type>2</Type>
-                <FileLastModifiedDate>2023-02-17 10:20:48Z</FileLastModifiedDate>
+                <FileLastModifiedDate>2026-06-14 11:07:01Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
@@ -10482,6 +10600,45 @@ stop
                 <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\44813__doobit__jetpropdown1 (mp3cut.net).wav</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2026-06-12 17:23:10Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>25</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>24</ID>
+                <Index>54</Index>
+                <ScriptName>aJointer</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\freesound_community-jointer-plane-87477 (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-14 10:42:59Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>25</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>25</ID>
+                <Index>55</Index>
+                <ScriptName>aTrapano</ScriptName>
+                <SourceFileName xml:space="preserve">C:\Users\old64\Downloads\freesound_community-drill-87927 (mp3cut.net).mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-14 10:42:23Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>25</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>26</ID>
+                <Index>56</Index>
+                <ScriptName>aSega</ScriptName>
+                <SourceFileName>C:\Users\old64\Downloads\freesound_community-woodcutting-35994.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2026-06-14 10:35:46Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
