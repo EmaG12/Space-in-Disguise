@@ -881,7 +881,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Esci</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>36</Top>
@@ -909,7 +909,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Gioca</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>36</Top>
@@ -930,7 +930,7 @@
                 <Name>lQuitWindowText</Name>
                 <Text xml:space="preserve">Sei sicuro di voler uscire?</Text>
                 <TextAlignment>TopLeft</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>4</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -1106,7 +1106,7 @@
                 <Name>lblRestoreText</Name>
                 <Text xml:space="preserve">Scegli il salvataggio che vuoi caricare</Text>
                 <TextAlignment>TopLeft</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>2</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -1131,7 +1131,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Carica</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>105</Top>
@@ -1159,7 +1159,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Esci</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>130</Top>
@@ -1179,12 +1179,12 @@
                 <Locked>False</Locked>
                 <Name>lstRestoreGamesList</Name>
                 <OnSelectionChanged />
-                <SelectedBackgroundColor>19248</SelectedBackgroundColor>
+                <SelectedBackgroundColor>61375</SelectedBackgroundColor>
                 <SelectedTextColor>32089</SelectedTextColor>
                 <ShowBorder>True</ShowBorder>
                 <ShowScrollArrows>True</ShowScrollArrows>
                 <TextAlignment>Left</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>31</Top>
                 <Translated>False</Translated>
                 <Visible>True</Visible>
@@ -1225,7 +1225,7 @@
                 <Name>lblSaveText</Name>
                 <Text xml:space="preserve">Inserisci il nome per questo salvataggio</Text>
                 <TextAlignment>TopLeft</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>3</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -1244,7 +1244,7 @@
                 <OnActivate>txtNewSaveName_OnActivate</OnActivate>
                 <ShowBorder>True</ShowBorder>
                 <Text />
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>30</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -1269,7 +1269,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Salva</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>81</Top>
@@ -1297,7 +1297,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Esci</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>131</Top>
@@ -1317,12 +1317,12 @@
                 <Locked>False</Locked>
                 <Name>lstSaveGamesList</Name>
                 <OnSelectionChanged>lstSaveGamesList_OnSelectionCh</OnSelectionChanged>
-                <SelectedBackgroundColor>19248</SelectedBackgroundColor>
+                <SelectedBackgroundColor>61375</SelectedBackgroundColor>
                 <SelectedTextColor>32089</SelectedTextColor>
                 <ShowBorder>True</ShowBorder>
                 <ShowScrollArrows>True</ShowScrollArrows>
                 <TextAlignment>Left</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>47</Top>
                 <Translated>False</Translated>
                 <Visible>True</Visible>
@@ -1347,7 +1347,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Cancella</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>106</Top>
@@ -1398,10 +1398,10 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Riprendi</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>7</Top>
+                <Top>5</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1426,10 +1426,10 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Salva</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>28</Top>
+                <Top>26</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1454,10 +1454,10 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Info</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>112</Top>
+                <Top>113</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1482,7 +1482,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Esci</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>133</Top>
@@ -1573,10 +1573,10 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Default</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>91</Top>
+                <Top>92</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1601,7 +1601,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Carica</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>49</Top>
@@ -1617,12 +1617,12 @@
                 <Font>0</Font>
                 <Height>12</Height>
                 <ID>9</ID>
-                <Left>114</Left>
+                <Left>119</Left>
                 <Locked>False</Locked>
                 <Name>lblVolume</Name>
                 <Text xml:space="preserve">Volume Audio </Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>10</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -1640,7 +1640,7 @@
                 <Name>lblVoice</Name>
                 <Text xml:space="preserve">Volume Voce</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>40</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -1658,8 +1658,8 @@
                 <Name>lblGamma</Name>
                 <Text>Gamma</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>19248</TextColor>
-                <Top>95</Top>
+                <TextColor>61375</TextColor>
+                <Top>93</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>100</Width>
@@ -1674,7 +1674,7 @@
                 <Height>18</Height>
                 <ID>12</ID>
                 <Image>2162</Image>
-                <Left>112</Left>
+                <Left>113</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>btnVoice</Name>
@@ -1683,7 +1683,7 @@
                 <PushedImage>2163</PushedImage>
                 <Text xml:space="preserve">Text only</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>71</Top>
@@ -1725,7 +1725,7 @@
                 <Name>lblSpeed</Name>
                 <Text>Velocita'</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>121</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -1750,10 +1750,10 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Menu'</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>70</Top>
+                <Top>71</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>70</Width>
@@ -1794,7 +1794,7 @@
                 <Name>lRestartText</Name>
                 <Text xml:space="preserve">Sei sicuro di voler tornare al menu'?</Text>
                 <TextAlignment>TopLeft</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <Top>5</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -1819,7 +1819,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>Si</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>36</Top>
@@ -1847,7 +1847,7 @@
                 <PushedImage>2161</PushedImage>
                 <Text>No</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>36</Top>
@@ -2018,7 +2018,7 @@
           </GUIMain>
           <GUIMain>
             <NormalGUI>
-              <BackgroundColor>16</BackgroundColor>
+              <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>103</BackgroundImage>
               <BorderColor>0</BorderColor>
               <Clickable>True</Clickable>
@@ -2404,23 +2404,23 @@
                 <Font>0</Font>
                 <Height>20</Height>
                 <ID>0</ID>
-                <Image>0</Image>
-                <Left>70</Left>
+                <Image>2162</Image>
+                <Left>73</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>Button2</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>Button2_OnClick</OnClick>
-                <PushedImage>0</PushedImage>
+                <PushedImage>2163</PushedImage>
                 <Text xml:space="preserve">Nuova Partita</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
                 <Top>25</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>110</Width>
+                <Width>106</Width>
                 <WrapText>False</WrapText>
                 <ZOrder>0</ZOrder>
               </GUIButton>
@@ -2430,25 +2430,25 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>20</Height>
+                <Height>19</Height>
                 <ID>1</ID>
-                <Image>0</Image>
-                <Left>70</Left>
+                <Image>2162</Image>
+                <Left>73</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>Button3</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>Button3_OnClick</OnClick>
-                <PushedImage>0</PushedImage>
+                <PushedImage>2163</PushedImage>
                 <Text>Continua</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>59</Top>
+                <Top>60</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>110</Width>
+                <Width>105</Width>
                 <WrapText>False</WrapText>
                 <ZOrder>1</ZOrder>
               </GUIButton>
@@ -2458,25 +2458,25 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>20</Height>
+                <Height>19</Height>
                 <ID>2</ID>
-                <Image>0</Image>
-                <Left>70</Left>
+                <Image>2162</Image>
+                <Left>73</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>Button5</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>Button5_OnClick</OnClick>
-                <PushedImage>0</PushedImage>
+                <PushedImage>2163</PushedImage>
                 <Text>Esci</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>61375</TextColor>
                 <TextPaddingHorizontal>2</TextPaddingHorizontal>
                 <TextPaddingVertical>2</TextPaddingVertical>
-                <Top>95</Top>
+                <Top>96</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>110</Width>
+                <Width>105</Width>
                 <WrapText>False</WrapText>
                 <ZOrder>2</ZOrder>
               </GUIButton>
@@ -5192,7 +5192,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2144" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/Verbs/btn_arrowdown_normal.png</FileName>
+                      <FileName>Sprites/2144.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>27</ImportHeight>
@@ -5208,7 +5208,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2145" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/Verbs/btn_arrowdown_over.png</FileName>
+                      <FileName>Sprites/2145.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>27</ImportHeight>
@@ -5224,7 +5224,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2146" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/Verbs/btn_arrowdown_pressed.png</FileName>
+                      <FileName>Sprites/2146.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>27</ImportHeight>
@@ -5240,7 +5240,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2147" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/Verbs/btn_arrowup_normal.png</FileName>
+                      <FileName>Sprites/2147.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>27</ImportHeight>
@@ -5256,7 +5256,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2148" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/Verbs/btn_arrowup_over.png</FileName>
+                      <FileName>Sprites/2148.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>27</ImportHeight>
@@ -5272,7 +5272,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2149" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/Verbs/btn_arrowup_pressed.png</FileName>
+                      <FileName>Sprites/2149.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>27</ImportHeight>
@@ -5426,7 +5426,7 @@ stop
                 <Sprites>
                   <Sprite Slot="2160" Width="71" Height="19" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/UI/button_medium_normal.png</FileName>
+                      <FileName>Sprites/2160.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>19</ImportHeight>
@@ -5442,7 +5442,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2161" Width="71" Height="19" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/UI/button_medium_pressed.png</FileName>
+                      <FileName>Sprites/2161.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>19</ImportHeight>
@@ -5458,7 +5458,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2162" Width="105" Height="19" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/UI/buttom_large_normal.png</FileName>
+                      <FileName>Sprites/2162.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>19</ImportHeight>
@@ -5474,7 +5474,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2163" Width="105" Height="19" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/UI/button_large_pressed.png</FileName>
+                      <FileName>Sprites/2163.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>19</ImportHeight>
@@ -5490,7 +5490,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2165" Width="99" Height="4" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/UI/slider_bar.png</FileName>
+                      <FileName>Sprites/2165.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>4</ImportHeight>
@@ -5506,7 +5506,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2166" Width="9" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/UI/slider_handle.png</FileName>
+                      <FileName>Sprites/2166.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>11</ImportHeight>
@@ -5522,7 +5522,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2167" Width="259" Height="157" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/UI/background_saverestore.png</FileName>
+                      <FileName>Sprites/2167.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>157</ImportHeight>
@@ -5538,7 +5538,7 @@ stop
                   </Sprite>
                   <Sprite Slot="2168" Width="205" Height="65" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/UI/background_modal_yesno.png</FileName>
+                      <FileName>Sprites/2168.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>65</ImportHeight>
@@ -6208,7 +6208,7 @@ stop
             <Sprites>
               <Sprite Slot="1" Width="223" Height="104" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/1.png</FileName>
+                  <FileName>Sprites/1.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>104</ImportHeight>
@@ -6224,7 +6224,7 @@ stop
               </Sprite>
               <Sprite Slot="2" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/2.png</FileName>
+                  <FileName>Sprites/2.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6240,7 +6240,7 @@ stop
               </Sprite>
               <Sprite Slot="3" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/3.png</FileName>
+                  <FileName>Sprites/3.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6256,7 +6256,7 @@ stop
               </Sprite>
               <Sprite Slot="4" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/4.png</FileName>
+                  <FileName>Sprites/4.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6272,7 +6272,7 @@ stop
               </Sprite>
               <Sprite Slot="5" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/5.png</FileName>
+                  <FileName>Sprites/5.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6288,7 +6288,7 @@ stop
               </Sprite>
               <Sprite Slot="6" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/6.png</FileName>
+                  <FileName>Sprites/6.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6304,7 +6304,7 @@ stop
               </Sprite>
               <Sprite Slot="7" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/7.png</FileName>
+                  <FileName>Sprites/7.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6320,7 +6320,7 @@ stop
               </Sprite>
               <Sprite Slot="8" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/8.png</FileName>
+                  <FileName>Sprites/8.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6336,7 +6336,7 @@ stop
               </Sprite>
               <Sprite Slot="9" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/9.png</FileName>
+                  <FileName>Sprites/9.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6352,7 +6352,7 @@ stop
               </Sprite>
               <Sprite Slot="10" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/10.png</FileName>
+                  <FileName>Sprites/10.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6416,7 +6416,7 @@ stop
               </Sprite>
               <Sprite Slot="14" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/14.png</FileName>
+                  <FileName>Sprites/14.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6432,7 +6432,7 @@ stop
               </Sprite>
               <Sprite Slot="15" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/15.png</FileName>
+                  <FileName>Sprites/15.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -6448,7 +6448,7 @@ stop
               </Sprite>
               <Sprite Slot="16" Width="25" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/VerbCoin/16.png</FileName>
+                  <FileName>Sprites/16.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>25</ImportHeight>
@@ -8962,22 +8962,6 @@ stop
               <OffsetY>0</OffsetY>
               <ImportHeight>21</ImportHeight>
               <ImportWidth>21</ImportWidth>
-              <ImportAsTile>False</ImportAsTile>
-              <Frame>0</Frame>
-              <RemapToGamePalette>True</RemapToGamePalette>
-              <RemapToRoomPalette>False</RemapToRoomPalette>
-              <ImportMethod>LeaveAsIs</ImportMethod>
-              <TransparentColorIndex>0</TransparentColorIndex>
-              <ImportAlphaChannel>True</ImportAlphaChannel>
-            </Source>
-          </Sprite>
-          <Sprite Slot="171" Width="110" Height="20" ColorDepth="32" Resolution="Real" AlphaChannel="True">
-            <Source>
-              <FileName>C:\Users\old64\Desktop\tasto.png</FileName>
-              <OffsetX>0</OffsetX>
-              <OffsetY>0</OffsetY>
-              <ImportHeight>20</ImportHeight>
-              <ImportWidth>110</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>True</RemapToGamePalette>
