@@ -3034,7 +3034,7 @@
             <ScriptName>cCacodemoneTarocco</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>32799</SpeechColor>
+            <SpeechColor>32784</SpeechColor>
             <SpeechView>0</SpeechView>
             <StartX>905</StartX>
             <StartY>253</StartY>
@@ -3122,7 +3122,7 @@
             <ScriptName>cVoce</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
+            <SpeechColor>32799</SpeechColor>
             <SpeechView>0</SpeechView>
             <StartX>160</StartX>
             <StartY>120</StartY>
