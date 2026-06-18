@@ -1,3 +1,23 @@
 Game : (room:3) Dialog: all options have been turned off, stopping dialog.
 Game : (room:3) Dialog: all options have been turned off, stopping dialog.
-Game : (room:4) [GlobalScript.asc:891] !RunDialog: Cannot run this command, since there was a RunDialog command already queued to run in "GlobalScript.asc", line 889
+Game : (room:3) Dialog: all options have been turned off, stopping dialog.
+Game : (room:4) Dialog: all options have been turned off, stopping dialog.
+Game : (room:4) Dialog: all options have been turned off, stopping dialog.
+Game : (room:6) Dialog: all options have been turned off, stopping dialog.
+Game : (room:4) [GlobalScript.asc:892] !RunDialog: Cannot run this command, since there was a RunDialog command already queued to run in "GlobalScript.asc", line 890
+Game : (room:4) [GlobalScript.asc:892] !RunDialog: Cannot run this command, since there was a RunDialog command already queued to run in "GlobalScript.asc", line 890
+Game : (room:4) Dialog: all options have been turned off, stopping dialog.
+Game : (room:4) Dialog: all options have been turned off, stopping dialog.
+Game : (room:4) Dialog: all options have been turned off, stopping dialog.
+Game : (room:9) [room9.asc:9] WARNING: String format: missing argument 1.
+	Format string:
+	"Sequenza di decollo avviata. Sistemi al 100%."
+Game : (room:9) [room9.asc:9] WARNING: String format: missing argument 1.
+	Format string:
+	"Sequenza di decollo avviata. Sistemi al 100%."
+Game : (room:9) [room9.asc:9] WARNING: String format: missing argument 1.
+	Format string:
+	"Sequenza di decollo avviata. Sistemi al 100%."
+Game : (room:9) [room9.asc:9] WARNING: String format: missing argument 1.
+	Format string:
+	"Sequenza di decollo avviata. Sistemi al 100%."

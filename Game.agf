@@ -2491,7 +2491,7 @@
         <InventoryItems>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description xml:space="preserve">Allarme Della Navicella.</Description>
+            <Description xml:space="preserve">Allarme Della Navicella</Description>
             <HotspotX>6</HotspotX>
             <HotspotY>3</HotspotY>
             <ID>1</ID>
@@ -2510,7 +2510,7 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description>Geo-Mappa.</Description>
+            <Description>Geo-Mappa</Description>
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <ID>2</ID>
@@ -2529,7 +2529,7 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>0</CursorImage>
-            <Description xml:space="preserve">Chiave Miniera.</Description>
+            <Description xml:space="preserve">Chiave Miniera</Description>
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <ID>3</ID>
@@ -3267,7 +3267,7 @@ stop
     
 cEsploratore: Incredibile...ha funzionato.
 cHT: Avevi dubbi? È tecnologia superiore. Ora passiamo al mio di problema.
-cEsploratore: Grazie all'energia sprigionata dal cristallo sono riuscito a ricaricare ance questa 'geo-mappa'.
+cEsploratore: Grazie all'energia sprigionata dal cristallo sono riuscito a ricaricare anche questa 'geo-mappa'.
 cHT: Sarei commosso, se non avessi fretta di andarmene.
 cEsploratore: Ignorero' le tue battute sarcastiche. Vorrei ricambiare il favore adesso.
 cEsploratore: Ho un contatto all'avamposto qui vicino. Potrebbe avere i componenti meccanici per la tua nave.
