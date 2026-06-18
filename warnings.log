@@ -1,11 +1,12 @@
-
-Game : (room:6) Dialog: all options have been turned off, stopping dialog.
-
-Game : (room:3) Dialog: all options have been turned off, stopping dialog.
 Game : (room:9) [room9.asc:9] WARNING: String format: missing argument 1.
 	Format string:
 	"Sequenza di decollo avviata. Sistemi al 100%."
 Game : (room:9) [room9.asc:9] WARNING: String format: missing argument 1.
 	Format string:
 	"Sequenza di decollo avviata. Sistemi al 100%."
-
+Game : (room:9) [room9.asc:9] WARNING: String format: missing argument 1.
+	Format string:
+	"Sequenza di decollo avviata. Sistemi al 100%."
+Game : (room:9) [room9.asc:9] WARNING: String format: missing argument 1.
+	Format string:
+	"Sequenza di decollo avviata. Sistemi al 100%."
