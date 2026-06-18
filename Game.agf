@@ -8778,7 +8778,7 @@ stop
           </Sprite>
           <Sprite Slot="105" Width="70" Height="60" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>C:\Users\Gabriele\Desktop\untitled.png</FileName>
+              <FileName>C:\Users\Gabriele\Desktop\SVG\Sprite\untitled.png</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
               <ImportHeight>60</ImportHeight>
