@@ -3384,19 +3384,19 @@ stop
               <DialogOption>
                 <ID>2</ID>
                 <Say>False</Say>
-                <Show>True</Show>
+                <Show>False</Show>
                 <Text xml:space="preserve">Alieno rompiscatole</Text>
               </DialogOption>
               <DialogOption>
                 <ID>3</ID>
                 <Say>False</Say>
-                <Show>True</Show>
+                <Show>False</Show>
                 <Text xml:space="preserve">Navicella schiantata</Text>
               </DialogOption>
               <DialogOption>
                 <ID>4</ID>
                 <Say>False</Say>
-                <Show>True</Show>
+                <Show>False</Show>
                 <Text>Aiuto</Text>
               </DialogOption>
             </DialogOptions>
