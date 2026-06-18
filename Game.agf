@@ -3212,7 +3212,7 @@ option-off 5
 return
 
 @6 
-cEsploratore: Ci vediamo, disturbami il meno possibile
+cEsploratore: Non disturbarmi mentre lavoro.
  cEsploratore.FaceDirection(eDirectionRight);
 stop
 
