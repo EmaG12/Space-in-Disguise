@@ -659,43 +659,43 @@
             <Number>0</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Cutscene Iniziale</Description>
             <Number>1</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description>Deserto</Description>
             <Number>2</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description>Caverna</Description>
             <Number>3</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description>Villaggio</Description>
             <Number>4</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Stanza Buia</Description>
             <Number>5</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description>Officina</Description>
             <Number>6</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Miniera Abbandonata</Description>
             <Number>7</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Vecchio Laboratorio</Description>
             <Number>8</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Cutscene Finale</Description>
             <Number>9</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description IsNull="True" />
+            <Description>Ringraziamenti</Description>
             <Number>10</Number>
           </UnloadedRoom>
         </UnloadedRooms>
