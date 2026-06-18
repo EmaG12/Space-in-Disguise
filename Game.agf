@@ -2381,7 +2381,7 @@
               <BackgroundImage>0</BackgroundImage>
               <BorderColor>0</BorderColor>
               <Clickable>True</Clickable>
-              <Height>320</Height>
+              <Height>200</Height>
               <ID>11</ID>
               <Left>40</Left>
               <Name>gMainMenu</Name>
